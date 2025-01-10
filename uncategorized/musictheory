@@ -6,13 +6,15 @@
   
   <title>Musictheory | sonder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="article">
+  <meta name="description" content="基础乐理知识1. 认识音符和节奏 学习内容： 音符（C、D、E、F、G、A、B）和升降音（#、b）的概念。 节奏符号（全音符、二分音符、四分音符等）。 节拍和拍号（如 4&#x2F;4、3&#x2F;4）。   练习建议： 在吉他上找到每根弦的音符位置。 打节拍器练习简单的节奏型。    2. 音阶与调式 学习内容： 自然大调音阶（C 大调）及其公式（全全半全全全半）。 自然小调音阶（A 小调）及">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Musictheory">
 <meta property="og:url" content="https://sonder10110.github.io/uncategorized/musictheory">
 <meta property="og:site_name" content="sonder">
+<meta property="og:description" content="基础乐理知识1. 认识音符和节奏 学习内容： 音符（C、D、E、F、G、A、B）和升降音（#、b）的概念。 节奏符号（全音符、二分音符、四分音符等）。 节拍和拍号（如 4&#x2F;4、3&#x2F;4）。   练习建议： 在吉他上找到每根弦的音符位置。 打节拍器练习简单的节奏型。    2. 音阶与调式 学习内容： 自然大调音阶（C 大调）及其公式（全全半全全全半）。 自然小调音阶（A 小调）及">
 <meta property="og:locale">
 <meta property="article:published_time" content="2025-01-10T08:28:50.000Z">
-<meta property="article:modified_time" content="2025-01-10T08:28:50.800Z">
+<meta property="article:modified_time" content="2025-01-10T08:49:28.403Z">
 <meta property="article:author" content="Sonder">
 <meta name="twitter:card" content="summary">
   
@@ -95,11 +97,50 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h2 id="基础乐理知识"><a href="#基础乐理知识" class="headerlink" title="基础乐理知识"></a>基础乐理知识</h2><h3 id="1-认识音符和节奏"><a href="#1-认识音符和节奏" class="headerlink" title="1. 认识音符和节奏"></a>1. 认识音符和节奏</h3><ul>
+<li>学习内容：<ul>
+<li>音符（C、D、E、F、G、A、B）和升降音（#、b）的概念。</li>
+<li>节奏符号（全音符、二分音符、四分音符等）。</li>
+<li>节拍和拍号（如 4&#x2F;4、3&#x2F;4）。</li>
+</ul>
+</li>
+<li>练习建议：<ul>
+<li>在吉他上找到每根弦的音符位置。</li>
+<li>打节拍器练习简单的节奏型。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-音阶与调式"><a href="#2-音阶与调式" class="headerlink" title="2. 音阶与调式"></a>2. 音阶与调式</h3><ul>
+<li>学习内容：<ul>
+<li>自然大调音阶（C 大调）及其公式（全全半全全全半）。</li>
+<li>自然小调音阶（A 小调）及其公式（全半全全半全全）。</li>
+<li>了解调号和音阶关系。</li>
+</ul>
+</li>
+<li>练习建议：<ul>
+<li>在吉他指板上弹奏 C 大调和 A 小调音阶。</li>
+<li>练习音阶爬格子，熟悉指板位置。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-和弦基础"><a href="#3-和弦基础" class="headerlink" title="3. 和弦基础"></a>3. 和弦基础</h3><ul>
+<li>学习内容：<ul>
+<li>什么是三和弦（大三和弦、小三和弦）。</li>
+<li>常见和弦的构成音（如 C 和弦：C、E、G）。</li>
+<li>和弦表记法（如 C、Am、G7）。</li>
+</ul>
+</li>
+<li>练习建议：<ul>
+<li>学会简单的和弦切换（如 C-G-Am-F）。</li>
+<li>用和弦为简单的流行曲伴奏。</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sonder10110.github.io/uncategorized/musictheory" data-id="cm5qijre4000064dx96ea9jtj" data-title="Musictheory" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
+      <a data-url="https://sonder10110.github.io/uncategorized/musictheory" data-id="cm5qio1k30000msdx8fom7zku" data-title="Musictheory" class="article-share-link"><span class="fa fa-share">Teilen</span></a>
       
       
       
