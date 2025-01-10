@@ -9,12 +9,12 @@
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://sonder10110.github.io/uncategorized/hello-world">
+<meta property="og:url" content="https://sonder10110.github.io/uncategorized/main-page">
 <meta property="og:site_name" content="sonder">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-01-10T00:22:02.244Z">
-<meta property="article:modified_time" content="2025-01-10T00:19:57.879Z">
+<meta property="article:modified_time" content="2025-01-10T08:22:08.033Z">
 <meta property="article:author" content="Sonder">
 <meta name="twitter:card" content="summary">
   
@@ -75,9 +75,9 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-main-page" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/uncategorized/hello-world" class="article-date">
+    <a href="/uncategorized/main-page" class="article-date">
   <time class="dt-published" datetime="2025-01-10T00:22:02.244Z" itemprop="datePublished">2025-01-10</time>
 </a>
     
@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sonder10110.github.io/uncategorized/hello-world" data-id="cm5qhliad00012odxglf14iye" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://sonder10110.github.io/uncategorized/main-page" data-id="cm5qhotrj0001b0dxhajx7fv3" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -124,7 +124,7 @@
     
 <nav id="article-nav">
   
-    <a href="/uncategorized/my-first-blog" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/uncategorized/basic-music-theory" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
@@ -169,11 +169,11 @@
       <ul>
         
           <li>
-            <a href="/uncategorized/my-first-blog">&#39;my-first-blog&#39;</a>
+            <a href="/uncategorized/basic-music-theory">&#39;my-first-blog&#39;</a>
           </li>
         
           <li>
-            <a href="/uncategorized/hello-world">Hello World</a>
+            <a href="/uncategorized/main-page">Hello World</a>
           </li>
         
       </ul>
