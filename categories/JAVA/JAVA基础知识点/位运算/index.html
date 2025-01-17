@@ -29,8 +29,7 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Sonder&#039;s Site</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">分类</a></li><li><a href="/categories/JAVA/">JAVA</a></li><li><a href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a></li><li class="is-active"><a href="#" aria-current="page">位运算</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-01-16T05:17:53.000Z" title="2025/1/16 13:17:53">2025-01-16</time>发表</span><span class="level-item"><time dateTime="2025-01-17T03:44:50.816Z" title="2025/1/17 11:44:50">2025-01-17</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a><span> / </span><a class="link-muted" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a><span> / </span><a class="link-muted" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/">位运算</a></span><span class="level-item">16 分钟读完 (大约2349个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/bitewise/">位运算</a></p><div class="content"><p>位运算是对整数在二进制位层面上进行直接操作的运算。它在性能敏感的程序中尤其重要，例如操作系统、嵌入式系统、加密算法等领域，通常比普通的算术运算更高效。</p>
-<p>你提到的性质是位运算中的一个基本属性，对于按位“或”操作（OR）而言，确实存在一些规律和性质。这些性质在位运算中非常重要，特别是在优化和证明等场景中。以下是关于 <strong>按位与（AND）</strong>、<strong>按位或（OR）</strong>、<strong>按位异或（XOR）</strong> 和 <strong>按位非（NOT）</strong> 等常见位运算的各种基本性质的详细说明。</p>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">Sonder&#039;s Site</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">分类</a></li><li><a href="/categories/JAVA/">JAVA</a></li><li><a href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a></li><li class="is-active"><a href="#" aria-current="page">位运算</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-01-16T05:17:53.000Z" title="2025/1/16 13:17:53">2025-01-16</time>发表</span><span class="level-item"><time dateTime="2025-01-17T03:51:57.962Z" title="2025/1/17 11:51:57">2025-01-17</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a><span> / </span><a class="link-muted" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a><span> / </span><a class="link-muted" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/">位运算</a></span><span class="level-item">15 分钟读完 (大约2223个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/bitewise/">位运算</a></p><div class="content"><p>位运算是对整数在二进制位层面上进行直接操作的运算。它在性能敏感的程序中尤其重要，例如操作系统、嵌入式系统、加密算法等领域，通常比普通的算术运算更高效。</p>
 <h3 id="1-按位“或”运算的性质（OR）"><a href="#1-按位“或”运算的性质（OR）" class="headerlink" title="1. 按位“或”运算的性质（OR）"></a>1. <strong>按位“或”运算的性质（OR）</strong></h3><p>对于任意两个整数 <code>A</code> 和 <code>B</code>，按位或运算（<code>A | B</code>）具有以下几条重要性质：</p>
 <h4 id="1-1-自反性（Idempotence）"><a href="#1-1-自反性（Idempotence）" class="headerlink" title="1.1. 自反性（Idempotence）"></a>1.1. <strong>自反性（Idempotence）</strong></h4><p>任何数与自身做按位或运算，结果仍然是自身。例如：</p>
 <ul>
@@ -40,45 +39,45 @@
 <p>这意味着，如果 <code>A</code> 小于 <code>B</code>，则 <code>A</code> 与任意数 <code>C</code> 做按位或运算的结果将不大于 <code>B</code> 与 <code>C</code> 的按位或结果。直观来说，按位或运算不会缩小数值。</p>
 <h4 id="1-3-与任意元素按位或运算，结果大于等于自身"><a href="#1-3-与任意元素按位或运算，结果大于等于自身" class="headerlink" title="1.3. 与任意元素按位或运算，结果大于等于自身"></a>1.3. <strong>与任意元素按位或运算，结果大于等于自身</strong></h4><p>$A | B \geq A$</p>
 <p>按位或操作将 <code>A</code> 中的 <code>0</code> 变为 <code>1</code>，不会使 <code>1</code> 变回 <code>0</code>，因此 <code>A | B</code> 的每一位都大于或等于 <code>A</code> 的相应位。</p>
-<h4 id="1-4-交换律（Commutativity）"><a href="#1-4-交换律（Commutativity）" class="headerlink" title="1.4. 交换律（Commutativity）"></a>1.4. <strong>交换律（Commutativity）</strong></h4><p>$A | B &#x3D; B | A$</p>
+<h4 id="1-4-交换律（Commutativity）"><a href="#1-4-交换律（Commutativity）" class="headerlink" title="1.4. 交换律（Commutativity）"></a>1.4. <strong>交换律（Commutativity）</strong></h4><p>$A | B = B | A$</p>
 <p>按位或运算是交换的，即 <code>A</code> 与 <code>B</code> 按位或运算的结果与顺序无关。</p>
-<h4 id="1-5-结合律（Associativity）"><a href="#1-5-结合律（Associativity）" class="headerlink" title="1.5. 结合律（Associativity）"></a>1.5. <strong>结合律（Associativity）</strong></h4><p>$(A | B) | C &#x3D; A | (B | C)$</p>
+<h4 id="1-5-结合律（Associativity）"><a href="#1-5-结合律（Associativity）" class="headerlink" title="1.5. 结合律（Associativity）"></a>1.5. <strong>结合律（Associativity）</strong></h4><p>$(A | B) | C = A | (B | C)$</p>
 <p>按位或运算是结合的，即对多个数进行按位或时，操作的顺序可以任意调整。</p>
-<h4 id="1-6-单位元（Identity-Element）"><a href="#1-6-单位元（Identity-Element）" class="headerlink" title="1.6. 单位元（Identity Element）"></a>1.6. <strong>单位元（Identity Element）</strong></h4><p>$A | 0 &#x3D; A$</p>
+<h4 id="1-6-单位元（Identity-Element）"><a href="#1-6-单位元（Identity-Element）" class="headerlink" title="1.6. 单位元（Identity Element）"></a>1.6. <strong>单位元（Identity Element）</strong></h4><p>$A | 0 = A$</p>
 <p>任意数与 <code>0</code> 做按位或运算，结果仍然是该数本身。</p>
-<h4 id="1-7-吸收律（Absorption）"><a href="#1-7-吸收律（Absorption）" class="headerlink" title="1.7. 吸收律（Absorption）"></a>1.7. <strong>吸收律（Absorption）</strong></h4><p>$A | (A &amp; B) &#x3D; A$</p>
+<h4 id="1-7-吸收律（Absorption）"><a href="#1-7-吸收律（Absorption）" class="headerlink" title="1.7. 吸收律（Absorption）"></a>1.7. <strong>吸收律（Absorption）</strong></h4><p>$A | (A \&amp; B) = A$</p>
 <p>任何数与它与另一个数按位与（<code>&amp;</code>）的结果做按位或，结果等于原数。这个性质的意思是，按位或操作“吸收”了按位与的结果。</p>
-<h4 id="1-8-按位或与按位与的分配律（Distributivity）"><a href="#1-8-按位或与按位与的分配律（Distributivity）" class="headerlink" title="1.8. 按位或与按位与的分配律（Distributivity）"></a>1.8. <strong>按位或与按位与的分配律（Distributivity）</strong></h4><p>$A | (B &amp; C) &#x3D; (A | B) &amp; (A | C)$</p>
+<h4 id="1-8-按位或与按位与的分配律（Distributivity）"><a href="#1-8-按位或与按位与的分配律（Distributivity）" class="headerlink" title="1.8. 按位或与按位与的分配律（Distributivity）"></a>1.8. <strong>按位或与按位与的分配律（Distributivity）</strong></h4><p>$A | (B \&amp; C) = (A | B) \&amp; (A | C)$</p>
 <p>按位或和按位与之间存在分配律，类似于普通算数运算中的分配律。</p>
 <hr>
 <h3 id="2-按位“与”运算的性质（AND）"><a href="#2-按位“与”运算的性质（AND）" class="headerlink" title="2. 按位“与”运算的性质（AND）"></a>2. <strong>按位“与”运算的性质（AND）</strong></h3><p>按位与运算（<code>A &amp; B</code>）也有一些类似的性质：</p>
-<h4 id="2-1-自反性（Idempotence）"><a href="#2-1-自反性（Idempotence）" class="headerlink" title="2.1. 自反性（Idempotence）"></a>2.1. <strong>自反性（Idempotence）</strong></h4><p>A &amp; A &#x3D; A</p>
+<h4 id="2-1-自反性（Idempotence）"><a href="#2-1-自反性（Idempotence）" class="headerlink" title="2.1. 自反性（Idempotence）"></a>2.1. <strong>自反性（Idempotence）</strong></h4><p>A &amp; A = A</p>
 <p>任何数与自身做按位与运算，结果仍然是自身。</p>
-<h4 id="2-2-交换律（Commutativity）"><a href="#2-2-交换律（Commutativity）" class="headerlink" title="2.2. 交换律（Commutativity）"></a>2.2. <strong>交换律（Commutativity）</strong></h4><p>A &amp; B &#x3D; B &amp; A</p>
+<h4 id="2-2-交换律（Commutativity）"><a href="#2-2-交换律（Commutativity）" class="headerlink" title="2.2. 交换律（Commutativity）"></a>2.2. <strong>交换律（Commutativity）</strong></h4><p>A &amp; B = B &amp; A</p>
 <p>按位与运算是交换的。</p>
-<h4 id="2-3-结合律（Associativity）"><a href="#2-3-结合律（Associativity）" class="headerlink" title="2.3. 结合律（Associativity）"></a>2.3. <strong>结合律（Associativity）</strong></h4><p>(A &amp; B) &amp; C &#x3D; A &amp; (B &amp; C)</p>
+<h4 id="2-3-结合律（Associativity）"><a href="#2-3-结合律（Associativity）" class="headerlink" title="2.3. 结合律（Associativity）"></a>2.3. <strong>结合律（Associativity）</strong></h4><p>(A &amp; B) &amp; C = A &amp; (B &amp; C)</p>
 <p>按位与运算是结合的。</p>
-<h4 id="2-4-单位元（Identity-Element）"><a href="#2-4-单位元（Identity-Element）" class="headerlink" title="2.4. 单位元（Identity Element）"></a>2.4. <strong>单位元（Identity Element）</strong></h4><p>A &amp; 1 &#x3D; A</p>
+<h4 id="2-4-单位元（Identity-Element）"><a href="#2-4-单位元（Identity-Element）" class="headerlink" title="2.4. 单位元（Identity Element）"></a>2.4. <strong>单位元（Identity Element）</strong></h4><p>A &amp; 1 = A</p>
 <p>任意数与 <code>1</code> 做按位与运算，结果仍然是该数本身。注意，<code>1</code> 在二进制中相当于所有位都为 <code>1</code>。</p>
-<h4 id="2-5-零元（Null-Element）"><a href="#2-5-零元（Null-Element）" class="headerlink" title="2.5. 零元（Null Element）"></a>2.5. <strong>零元（Null Element）</strong></h4><p>A &amp; 0 &#x3D; 0</p>
+<h4 id="2-5-零元（Null-Element）"><a href="#2-5-零元（Null-Element）" class="headerlink" title="2.5. 零元（Null Element）"></a>2.5. <strong>零元（Null Element）</strong></h4><p>A &amp; 0 = 0</p>
 <p>任意数与 <code>0</code> 做按位与运算，结果为 <code>0</code>。这是因为与 <code>0</code> 按位与运算的任何结果都会是 <code>0</code>。</p>
-<h4 id="2-6-吸收律（Absorption）"><a href="#2-6-吸收律（Absorption）" class="headerlink" title="2.6. 吸收律（Absorption）"></a>2.6. <strong>吸收律（Absorption）</strong></h4><p>A &amp; (A | B) &#x3D; A</p>
+<h4 id="2-6-吸收律（Absorption）"><a href="#2-6-吸收律（Absorption）" class="headerlink" title="2.6. 吸收律（Absorption）"></a>2.6. <strong>吸收律（Absorption）</strong></h4><p>A &amp; (A | B) = A</p>
 <p>按位与与按位或之间也有吸收律，类似于上面按位或的吸收律。</p>
 <hr>
 <h3 id="3-按位异或运算的性质（XOR）"><a href="#3-按位异或运算的性质（XOR）" class="headerlink" title="3. 按位异或运算的性质（XOR）"></a>3. <strong>按位异或运算的性质（XOR）</strong></h3><p>按位异或运算（<code>A ^ B</code>）也具有一些特别的性质：</p>
-<h4 id="3-1-自反性（Idempotence）"><a href="#3-1-自反性（Idempotence）" class="headerlink" title="3.1. 自反性（Idempotence）"></a>3.1. <strong>自反性（Idempotence）</strong></h4><p>A ^ A &#x3D; 0</p>
+<h4 id="3-1-自反性（Idempotence）"><a href="#3-1-自反性（Idempotence）" class="headerlink" title="3.1. 自反性（Idempotence）"></a>3.1. <strong>自反性（Idempotence）</strong></h4><p>A ^ A = 0</p>
 <p>任何数与自身做按位异或，结果为 <code>0</code>。</p>
-<h4 id="3-2-交换律（Commutativity）"><a href="#3-2-交换律（Commutativity）" class="headerlink" title="3.2. 交换律（Commutativity）"></a>3.2. <strong>交换律（Commutativity）</strong></h4><p>A ^ B &#x3D; B ^ A</p>
+<h4 id="3-2-交换律（Commutativity）"><a href="#3-2-交换律（Commutativity）" class="headerlink" title="3.2. 交换律（Commutativity）"></a>3.2. <strong>交换律（Commutativity）</strong></h4><p>A ^ B = B ^ A</p>
 <p>按位异或是交换的。</p>
-<h4 id="3-3-结合律（Associativity）"><a href="#3-3-结合律（Associativity）" class="headerlink" title="3.3. 结合律（Associativity）"></a>3.3. <strong>结合律（Associativity）</strong></h4><p>(A ^ B) ^ C &#x3D; A ^ (B ^ C)</p>
+<h4 id="3-3-结合律（Associativity）"><a href="#3-3-结合律（Associativity）" class="headerlink" title="3.3. 结合律（Associativity）"></a>3.3. <strong>结合律（Associativity）</strong></h4><p>(A ^ B) ^ C = A ^ (B ^ C)</p>
 <p>按位异或是结合的。</p>
-<h4 id="3-4-单位元（Identity-Element）"><a href="#3-4-单位元（Identity-Element）" class="headerlink" title="3.4. 单位元（Identity Element）"></a>3.4. <strong>单位元（Identity Element）</strong></h4><p>A ^ 0 &#x3D; A</p>
+<h4 id="3-4-单位元（Identity-Element）"><a href="#3-4-单位元（Identity-Element）" class="headerlink" title="3.4. 单位元（Identity Element）"></a>3.4. <strong>单位元（Identity Element）</strong></h4><p>A ^ 0 = A</p>
 <p>任何数与 <code>0</code> 做按位异或运算，结果仍然是该数本身。</p>
-<h4 id="3-5-对称性（Symmetry）"><a href="#3-5-对称性（Symmetry）" class="headerlink" title="3.5. 对称性（Symmetry）"></a>3.5. <strong>对称性（Symmetry）</strong></h4><p>A ^ B &#x3D; B ^ A</p>
+<h4 id="3-5-对称性（Symmetry）"><a href="#3-5-对称性（Symmetry）" class="headerlink" title="3.5. 对称性（Symmetry）"></a>3.5. <strong>对称性（Symmetry）</strong></h4><p>A ^ B = B ^ A</p>
 <p>按位异或是对称的。</p>
 <hr>
 <h3 id="4-按位“非”运算的性质（NOT）"><a href="#4-按位“非”运算的性质（NOT）" class="headerlink" title="4. 按位“非”运算的性质（NOT）"></a>4. <strong>按位“非”运算的性质（NOT）</strong></h3><p>按位非（<code>~</code>）运算的性质相对简单：</p>
-<h4 id="4-1-自反性（Idempotence）"><a href="#4-1-自反性（Idempotence）" class="headerlink" title="4.1. 自反性（Idempotence）"></a>4.1. <strong>自反性（Idempotence）</strong></h4><p>$\sim (\sim A) &#x3D; A$</p>
+<h4 id="4-1-自反性（Idempotence）"><a href="#4-1-自反性（Idempotence）" class="headerlink" title="4.1. 自反性（Idempotence）"></a>4.1. <strong>自反性（Idempotence）</strong></h4><p>$\sim (\sim A) = A$</p>
 <p>对某个数取两次按位非，结果是原数。</p>
 <h4 id="4-2-按位非操作"><a href="#4-2-按位非操作" class="headerlink" title="4.2. 按位非操作"></a>4.2. <strong>按位非操作</strong></h4><p>按位非操作对二进制数的每一位取反，即 <code>0</code> 变 <code>1</code>，<code>1</code> 变 <code>0</code>。</p>
 <hr>
@@ -97,7 +96,6 @@
 <ul>
 <li><p>规则：两个操作数的相同位置上的位都为 <code>1</code>，结果才为 <code>1</code>。</p>
 <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>&amp; <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>5</code> 的二进制是 <code>0101</code></li>
 <li><code>3</code> 的二进制是 <code>0011</code></li>
@@ -110,7 +108,6 @@
 <ul>
 <li><p>规则：两个操作数的相同位置上的位只要有一个为 <code>1</code>，结果就为 <code>1</code>。</p>
 <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>| <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>5</code> 的二进制是 <code>0101</code></li>
 <li><code>3</code> 的二进制是 <code>0011</code></li>
@@ -123,7 +120,6 @@
 <ul>
 <li><p>规则：两个操作数的相同位置上的位不同，结果为 <code>1</code>，相同则为 <code>0</code>。</p>
 <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>^ <span class="number">3</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>5</code> 的二进制是 <code>0101</code></li>
 <li><code>3</code> 的二进制是 <code>0011</code></li>
@@ -136,7 +132,6 @@
 <ul>
 <li><p>规则：对每一位取反，<code>0</code> 变成 <code>1</code>，<code>1</code> 变成 <code>0</code>。注意，这个操作会影响符号位，在 Java 中对 <code>int</code> 取反后是 32 位。</p>
 <figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~5</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>5</code> 的二进制是 <code>00000000000000000000000000000101</code></li>
 <li>结果：<code>~5 = 11111111111111111111111111111010</code> → <code>-6</code>（二进制补码表示）</li>
@@ -148,7 +143,6 @@
 <ul>
 <li><p>左移（&lt;&lt;）：将数字的所有位向左移动指定的位数，右侧用0补充。</p>
 <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>&lt;&lt; <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>5</code> 的二进制是 <code>0101</code></li>
 <li>左移一位：<code>1010</code> → <code>10</code></li>
@@ -156,7 +150,6 @@
 </li>
 <li><p>右移（&gt;&gt;）：将数字的所有位向右移动指定的位数，对于正数，用0填补；对于负数，符号位保持不变。</p>
 <figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>&gt;&gt; <span class="number">1</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>5</code> 的二进制是 <code>0101</code></li>
 <li>右移一位：<code>0010</code> → <code>2</code></li>
@@ -164,13 +157,11 @@
 </li>
 <li><p>无符号右移（&gt;&gt;&gt;）：与右移类似，但是对负数无符号右移时会将符号位填充为0。</p>
 <figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">-5 &gt;&gt;&gt; 1</span></span><br></pre></td></tr></table></figure>
-
 <ul>
 <li><code>-5</code> 的二进制（补码表示）是 <code>11111111111111111111111111111011</code></li>
 </ul>
 </li>
-<li><p>无符号右移一位：<code>01111111111111111111111111111101</code> → <code>2147483642</code></p>
-</li>
+<li>无符号右移一位：<code>01111111111111111111111111111101</code> → <code>2147483642</code></li>
 </ul>
 </li>
 </ol>
@@ -179,51 +170,59 @@
 <li><p><strong>快速计算乘法与除法（2 的幂）</strong></p>
 <ul>
 <li><p>左移：相当于乘以 2 的某个次幂。例如，x &lt;&lt; n 等价于 x * 2^n。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line"> <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &lt;&lt; <span class="number">2</span>;  <span class="comment">// 相当于 5 * 4 = 20</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &lt;&lt; <span class="number">2</span>;  <span class="comment">// 相当于 5 * 4 = 20</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ol>
 <ul>
-<li><p>右移：相当于除以 2 的某个次幂。例如，x &gt;&gt; n等价于 x &#x2F; 2^n。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &gt;&gt; <span class="number">2</span>;  <span class="comment">// 相当于 20 / 4 = 5</span></span><br></pre></td></tr></table></figure></li>
+<li><p>右移：相当于除以 2 的某个次幂。例如，x &gt;&gt; n等价于 x / 2^n。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &gt;&gt; <span class="number">2</span>;  <span class="comment">// 相当于 20 / 4 = 5</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<ol start="2">
+<ol>
 <li><p><strong>判断奇偶数</strong></p>
 <ul>
 <li><p><strong>奇数</strong>：<code>x &amp; 1</code> 为 <code>1</code> 时，表示 <code>x</code> 是奇数。</p>
 </li>
 <li><p><strong>偶数</strong>：x &amp; 1为 0时，表示x是偶数。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line"><span class="type">boolean</span> <span class="variable">isOdd</span> <span class="operator">=</span> (x &amp; <span class="number">1</span>) == <span class="number">1</span>;  <span class="comment">// 5 是奇数，结果为 true</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line"><span class="type">boolean</span> <span class="variable">isOdd</span> <span class="operator">=</span> (x &amp; <span class="number">1</span>) == <span class="number">1</span>;  <span class="comment">// 5 是奇数，结果为 true</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p><strong>判断是否是 2 的幂</strong></p>
 <ul>
-<li><p>一个数如果是 2 的幂，则它与它的前一个数按位与结果为 0。例如，x 是 2 的幂，当且仅当 x &amp; (x - 1) &#x3D;&#x3D; 0。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">8</span>;</span><br><span class="line"><span class="type">boolean</span> <span class="variable">isPowerOfTwo</span> <span class="operator">=</span> (x &amp; (x - <span class="number">1</span>)) == <span class="number">0</span>;  <span class="comment">// 8 是 2 的幂，结果为 true</span></span><br></pre></td></tr></table></figure></li>
+<li><p>一个数如果是 2 的幂，则它与它的前一个数按位与结果为 0。例如，x 是 2 的幂，当且仅当 x &amp; (x - 1) == 0。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">8</span>;</span><br><span class="line"><span class="type">boolean</span> <span class="variable">isPowerOfTwo</span> <span class="operator">=</span> (x &amp; (x - <span class="number">1</span>)) == <span class="number">0</span>;  <span class="comment">// 8 是 2 的幂，结果为 true</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p><strong>交换两个数</strong></p>
 <ul>
 <li><p>利用异或操作可以在不使用临时变量的情况下交换两个数。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">5</span>, b = <span class="number">3</span>;</span><br><span class="line">a = a ^ b;  <span class="comment">// a = 6</span></span><br><span class="line">b = a ^ b;  <span class="comment">// b = 5</span></span><br><span class="line">a = a ^ b;  <span class="comment">// a = 3</span></span><br><span class="line"><span class="comment">// 交换后，a=3, b=5</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">5</span>, b = <span class="number">3</span>;</span><br><span class="line">a = a ^ b;  <span class="comment">// a = 6</span></span><br><span class="line">b = a ^ b;  <span class="comment">// b = 5</span></span><br><span class="line">a = a ^ b;  <span class="comment">// a = 3</span></span><br><span class="line"><span class="comment">// 交换后，a=3, b=5</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p><strong>设置某一位</strong></p>
 <ul>
 <li><p>使用按位或操作来设置某一位为1</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x | (<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 设置第 2 位为 1 -&gt; 0111</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x | (<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 设置第 2 位为 1 -&gt; 0111</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p><strong>清除某一位</strong></p>
 <ul>
 <li><p>使用按位与操作和按位非操作清除某一位。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &amp; ~(<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 清除第 2 位 -&gt; 0001</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &amp; ~(<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 清除第 2 位 -&gt; 0001</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p><strong>反转某一位</strong></p>
 <ul>
 <li><p>使用按位异或操作来反转某一位。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x ^ (<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 反转第 2 位 -&gt; 0001</span></span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x ^ (<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 反转第 2 位 -&gt; 0001</span></span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p><strong>求平均数不带小数</strong></p>
@@ -231,7 +230,8 @@
 <li><p>位运算(a + b) &gt;&gt; 1</p>
 </li>
 <li><p>使用了位运算来高效地计算两个整数的平均值。通过按位与运算找到不进位的部分，按位异或运算找出进位的部分，然后将进位部分右移并与不进位部分相加，最终得到 <code>a</code> 和 <code>b</code> 的平均值。这种方法比直接使用 <code>(a + b) / 2</code> 更加高效。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> ((a &amp; b) + (a ^ b) &gt;&gt; <span class="number">1</span>) ;  </span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> ((a &amp; b) + (a ^ b) &gt;&gt; <span class="number">1</span>) ;  </span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 <li><p><strong>清零最低位的1</strong></p>
@@ -239,7 +239,8 @@
 <li><p>检查 <code>n</code> 是否是 2 的幂：如果 <code>n &amp; (n - 1) == 0</code>，那么 <code>n</code> 是 2 的幂。</p>
 </li>
 <li><p>清除 <code>n</code> 中最低位的 <code>1</code>。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> n &amp; (n - <span class="number">1</span>) ;  </span><br></pre></td></tr></table></figure></li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> n &amp; (n - <span class="number">1</span>) ;  </span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ol>
