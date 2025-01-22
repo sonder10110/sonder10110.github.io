@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>分类: 位运算 - sonder</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#28A745"><meta name="application-name" content="sonder"><meta name="msapplication-TileColor" content="#28A745"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="sonder"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta property="og:type" content="blog"><meta property="og:title" content="sonder"><meta property="og:url" content="https://sonder10110.github.io/"><meta property="og:site_name" content="sonder"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://sonder10110.github.io/img/og_image.png"><meta property="article:author" content="sonder"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://sonder10110.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sonder10110.github.io"},"headline":"sonder","image":["https://sonder10110.github.io/img/og_image.png"],"author":{"@type":"Person","name":"sonder"},"publisher":{"@type":"Organization","name":"sonder","logo":{"@type":"ImageObject","url":{"text":"浮生一梦"}}},"description":""}</script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">浮生一梦</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于本站</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">分类</a></li><li><a href="/categories/JAVA/">JAVA</a></li><li><a href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a></li><li class="is-active"><a href="#" aria-current="page">位运算</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-01-16T05:17:53.000Z" title="2025/1/16 13:17:53">2025-01-16</time>发表</span><span class="level-item"><time dateTime="2025-01-17T05:44:09.881Z" title="2025/1/17 13:44:09">2025-01-17</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/JAVA/">JAVA</a><span> / </span><a class="link-muted" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a><span> / </span><a class="link-muted" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/">位运算</a></span><span class="level-item">15 分钟读完 (大约2223个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/bitewise/">位运算</a></p><div class="content"><p>位运算是对整数在二进制位层面上进行直接操作的运算。它在性能敏感的程序中尤其重要，例如操作系统、嵌入式系统、加密算法等领域，通常比普通的算术运算更高效。</p>
+<h3 id="1-按位或运算的性质or"><a class="markdownIt-Anchor" href="#1-按位或运算的性质or"></a> 1. <strong>按位“或”运算的性质（OR）</strong></h3>
+<p>对于任意两个整数 <code>A</code> 和 <code>B</code>，按位或运算（<code>A | B</code>）具有以下几条重要性质：</p>
+<h4 id="11-自反性idempotence"><a class="markdownIt-Anchor" href="#11-自反性idempotence"></a> 1.1. <strong>自反性（Idempotence）</strong></h4>
+<p>任何数与自身做按位或运算，结果仍然是自身。例如：</p>
+<ul>
+<li><code>5 | 5 = 5</code></li>
+</ul>
+<h4 id="12-单调性monotonicity"><a class="markdownIt-Anchor" href="#12-单调性monotonicity"></a> 1.2. <strong>单调性（Monotonicity）</strong></h4>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mo>≤</mo><mi>B</mi><mtext>  </mtext><mo>⟹</mo><mtext>  </mtext><mi>A</mi><mi mathvariant="normal">∣</mi><mi>C</mi><mo>≤</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mi>C</mi><mspace width="1em"/><mtext>对于任意的</mtext><mi>C</mi></mrow><annotation encoding="application/x-tex">A \leq B \implies A | C \leq B | C \quad \text{对于任意的} C
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8193em;vertical-align:-0.13597em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.70733em;vertical-align:-0.024em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:1em;"></span><span class="mord text"><span class="mord cjk_fallback">对于任意的</span></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></span></p>
+<p>这意味着，如果 <code>A</code> 小于 <code>B</code>，则 <code>A</code> 与任意数 <code>C</code> 做按位或运算的结果将不大于 <code>B</code> 与 <code>C</code> 的按位或结果。直观来说，按位或运算不会缩小数值。</p>
+<h4 id="13-与任意元素按位或运算结果大于等于自身"><a class="markdownIt-Anchor" href="#13-与任意元素按位或运算结果大于等于自身"></a> 1.3. <strong>与任意元素按位或运算，结果大于等于自身</strong></h4>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi mathvariant="normal">∣</mi><mi>B</mi><mo>≥</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A | B \geq A
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span></span></p>
+<p>按位或操作将 <code>A</code> 中的 <code>0</code> 变为 <code>1</code>，不会使 <code>1</code> 变回 <code>0</code>，因此 <code>A | B</code> 的每一位都大于或等于 <code>A</code> 的相应位。</p>
+<h4 id="14-交换律commutativity"><a class="markdownIt-Anchor" href="#14-交换律commutativity"></a> 1.4. <strong>交换律（Commutativity）</strong></h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi mathvariant="normal">∣</mi><mi>B</mi><mo>=</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">A | B = B | A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">∣</span><span class="mord mathnormal">A</span></span></span></span></p>
+<p>按位或运算是交换的，即 <code>A</code> 与 <code>B</code> 按位或运算的结果与顺序无关。</p>
+<h4 id="15-结合律associativity"><a class="markdownIt-Anchor" href="#15-结合律associativity"></a> 1.5. <strong>结合律（Associativity）</strong></h4>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mi>B</mi><mo stretchy="false">)</mo><mi mathvariant="normal">∣</mi><mi>C</mi><mo>=</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mo stretchy="false">(</mo><mi>B</mi><mi mathvariant="normal">∣</mi><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(A | B) | C = A | (B | C)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span></p>
+<p>按位或运算是结合的，即对多个数进行按位或时，操作的顺序可以任意调整。</p>
+<h4 id="16-单位元identity-element"><a class="markdownIt-Anchor" href="#16-单位元identity-element"></a> 1.6. <strong>单位元（Identity Element）</strong></h4>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi mathvariant="normal">∣</mi><mn>0</mn><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A | 0 = A
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord">0</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span></span></p>
+<p>任意数与 <code>0</code> 做按位或运算，结果仍然是该数本身。</p>
+<h4 id="17-吸收律absorption"><a class="markdownIt-Anchor" href="#17-吸收律absorption"></a> 1.7. <strong>吸收律（Absorption）</strong></h4>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi mathvariant="normal">∣</mi><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">&amp;</mi><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A | (A \&amp; B) = A
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mord">&amp;</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span></span></p>
+<p>任何数与它与另一个数按位与（<code>&amp;</code>）的结果做按位或，结果等于原数。这个性质的意思是，按位或操作“吸收”了按位与的结果。</p>
+<h4 id="18-按位或与按位与的分配律distributivity"><a class="markdownIt-Anchor" href="#18-按位或与按位与的分配律distributivity"></a> 1.8. <strong>按位或与按位与的分配律（Distributivity）</strong></h4>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>A</mi><mi mathvariant="normal">∣</mi><mo stretchy="false">(</mo><mi>B</mi><mi mathvariant="normal">&amp;</mi><mi>C</mi><mo stretchy="false">)</mo><mo>=</mo><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mi>B</mi><mo stretchy="false">)</mo><mi mathvariant="normal">&amp;</mi><mo stretchy="false">(</mo><mi>A</mi><mi mathvariant="normal">∣</mi><mi>C</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A | (B \&amp; C) = (A | B) \&amp; (A | C)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord">&amp;</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mord">&amp;</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mclose">)</span></span></span></span></span></p>
+<p>按位或和按位与之间存在分配律，类似于普通算数运算中的分配律。</p>
+<hr>
+<h3 id="2-按位与运算的性质and"><a class="markdownIt-Anchor" href="#2-按位与运算的性质and"></a> 2. <strong>按位“与”运算的性质（AND）</strong></h3>
+<p>按位与运算（<code>A &amp; B</code>）也有一些类似的性质：</p>
+<h4 id="21-自反性idempotence"><a class="markdownIt-Anchor" href="#21-自反性idempotence"></a> 2.1. <strong>自反性（Idempotence）</strong></h4>
+<p>A &amp; A = A</p>
+<p>任何数与自身做按位与运算，结果仍然是自身。</p>
+<h4 id="22-交换律commutativity"><a class="markdownIt-Anchor" href="#22-交换律commutativity"></a> 2.2. <strong>交换律（Commutativity）</strong></h4>
+<p>A &amp; B = B &amp; A</p>
+<p>按位与运算是交换的。</p>
+<h4 id="23-结合律associativity"><a class="markdownIt-Anchor" href="#23-结合律associativity"></a> 2.3. <strong>结合律（Associativity）</strong></h4>
+<p>(A &amp; B) &amp; C = A &amp; (B &amp; C)</p>
+<p>按位与运算是结合的。</p>
+<h4 id="24-单位元identity-element"><a class="markdownIt-Anchor" href="#24-单位元identity-element"></a> 2.4. <strong>单位元（Identity Element）</strong></h4>
+<p>A &amp; 1 = A</p>
+<p>任意数与 <code>1</code> 做按位与运算，结果仍然是该数本身。注意，<code>1</code> 在二进制中相当于所有位都为 <code>1</code>。</p>
+<h4 id="25-零元null-element"><a class="markdownIt-Anchor" href="#25-零元null-element"></a> 2.5. <strong>零元（Null Element）</strong></h4>
+<p>A &amp; 0 = 0</p>
+<p>任意数与 <code>0</code> 做按位与运算，结果为 <code>0</code>。这是因为与 <code>0</code> 按位与运算的任何结果都会是 <code>0</code>。</p>
+<h4 id="26-吸收律absorption"><a class="markdownIt-Anchor" href="#26-吸收律absorption"></a> 2.6. <strong>吸收律（Absorption）</strong></h4>
+<p>A &amp; (A | B) = A</p>
+<p>按位与与按位或之间也有吸收律，类似于上面按位或的吸收律。</p>
+<hr>
+<h3 id="3-按位异或运算的性质xor"><a class="markdownIt-Anchor" href="#3-按位异或运算的性质xor"></a> 3. <strong>按位异或运算的性质（XOR）</strong></h3>
+<p>按位异或运算（<code>A ^ B</code>）也具有一些特别的性质：</p>
+<h4 id="31-自反性idempotence"><a class="markdownIt-Anchor" href="#31-自反性idempotence"></a> 3.1. <strong>自反性（Idempotence）</strong></h4>
+<p>A ^ A = 0</p>
+<p>任何数与自身做按位异或，结果为 <code>0</code>。</p>
+<h4 id="32-交换律commutativity"><a class="markdownIt-Anchor" href="#32-交换律commutativity"></a> 3.2. <strong>交换律（Commutativity）</strong></h4>
+<p>A ^ B = B ^ A</p>
+<p>按位异或是交换的。</p>
+<h4 id="33-结合律associativity"><a class="markdownIt-Anchor" href="#33-结合律associativity"></a> 3.3. <strong>结合律（Associativity）</strong></h4>
+<p>(A ^ B) ^ C = A ^ (B ^ C)</p>
+<p>按位异或是结合的。</p>
+<h4 id="34-单位元identity-element"><a class="markdownIt-Anchor" href="#34-单位元identity-element"></a> 3.4. <strong>单位元（Identity Element）</strong></h4>
+<p>A ^ 0 = A</p>
+<p>任何数与 <code>0</code> 做按位异或运算，结果仍然是该数本身。</p>
+<h4 id="35-对称性symmetry"><a class="markdownIt-Anchor" href="#35-对称性symmetry"></a> 3.5. <strong>对称性（Symmetry）</strong></h4>
+<p>A ^ B = B ^ A</p>
+<p>按位异或是对称的。</p>
+<hr>
+<h3 id="4-按位非运算的性质not"><a class="markdownIt-Anchor" href="#4-按位非运算的性质not"></a> 4. <strong>按位“非”运算的性质（NOT）</strong></h3>
+<p>按位非（<code>~</code>）运算的性质相对简单：</p>
+<h4 id="41-自反性idempotence"><a class="markdownIt-Anchor" href="#41-自反性idempotence"></a> 4.1. <strong>自反性（Idempotence）</strong></h4>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∼</mo><mo stretchy="false">(</mo><mo>∼</mo><mi>A</mi><mo stretchy="false">)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\sim (\sim A) = A
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mrel">∼</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">A</span></span></span></span></span></p>
+<p>对某个数取两次按位非，结果是原数。</p>
+<h4 id="42-按位非操作"><a class="markdownIt-Anchor" href="#42-按位非操作"></a> 4.2. <strong>按位非操作</strong></h4>
+<p>按位非操作对二进制数的每一位取反，即 <code>0</code> 变 <code>1</code>，<code>1</code> 变 <code>0</code>。</p>
+<hr>
+<h3 id="5-位运算的应用"><a class="markdownIt-Anchor" href="#5-位运算的应用"></a> 5. <strong>位运算的应用</strong></h3>
+<p>位运算在编程中非常有用，特别是在涉及到大量的数值操作、标志位管理、内存优化等场景。以下是一些常见的应用：</p>
+<ul>
+<li><strong>判断某个数是否为偶数</strong>：<code>x &amp; 1 == 0</code></li>
+<li><strong>判断某个数是否为 2 的幂</strong>：<code>x &amp; (x - 1) == 0</code></li>
+<li><strong>提取某一位</strong>：<code>(x &gt;&gt; n) &amp; 1</code>，获取第 <code>n</code> 位的值。</li>
+<li><strong>设置某一位</strong>：<code>x | (1 &lt;&lt; n)</code>，设置第 <code>n</code> 位为 <code>1</code>。</li>
+<li><strong>清除某一位</strong>：<code>x &amp; ~(1 &lt;&lt; n)</code>，清除第 <code>n</code> 位。</li>
+<li><strong>反转某一位</strong>：<code>x ^ (1 &lt;&lt; n)</code>，反转第 <code>n</code> 位。</li>
+</ul>
+<h3 id="位运算的基本操作"><a class="markdownIt-Anchor" href="#位运算的基本操作"></a> 位运算的基本操作</h3>
+<p>Java 和大多数编程语言支持以下几种常见的位运算：</p>
+<ol>
+<li>
+<p><strong>按位与（AND）</strong>：<code>&amp;</code></p>
+<ul>
+<li>
+<p>规则：两个操作数的相同位置上的位都为 <code>1</code>，结果才为 <code>1</code>。</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>&amp; <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>5</code> 的二进制是 <code>0101</code></li>
+<li><code>3</code> 的二进制是 <code>0011</code></li>
+<li>结果：<code>0101 &amp; 0011 = 0001</code> → <code>1</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>按位或（OR）</strong>：<code>|</code></p>
+<ul>
+<li>
+<p>规则：两个操作数的相同位置上的位只要有一个为 <code>1</code>，结果就为 <code>1</code>。</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>| <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>5</code> 的二进制是 <code>0101</code></li>
+<li><code>3</code> 的二进制是 <code>0011</code></li>
+<li>结果：<code>0101 | 0011 = 0111</code> → <code>7</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>按位异或（XOR）</strong>：<code>^</code></p>
+<ul>
+<li>
+<p>规则：两个操作数的相同位置上的位不同，结果为 <code>1</code>，相同则为 <code>0</code>。</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>^ <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>5</code> 的二进制是 <code>0101</code></li>
+<li><code>3</code> 的二进制是 <code>0011</code></li>
+<li>结果：<code>0101 ^ 0011 = 0110</code> → <code>6</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>按位非（NOT）</strong>：<code>~</code></p>
+<ul>
+<li>
+<p>规则：对每一位取反，<code>0</code> 变成 <code>1</code>，<code>1</code> 变成 <code>0</code>。注意，这个操作会影响符号位，在 Java 中对 <code>int</code> 取反后是 32 位。</p>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~5</span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>5</code> 的二进制是 <code>00000000000000000000000000000101</code></li>
+<li>结果：<code>~5 = 11111111111111111111111111111010</code> → <code>-6</code>（二进制补码表示）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>位移操作</strong>：</p>
+<ul>
+<li>
+<p>左移（&lt;&lt;）：将数字的所有位向左移动指定的位数，右侧用0补充。</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>&lt;&lt; <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>5</code> 的二进制是 <code>0101</code></li>
+<li>左移一位：<code>1010</code> → <code>10</code></li>
+</ul>
+</li>
+<li>
+<p>右移（&gt;&gt;）：将数字的所有位向右移动指定的位数，对于正数，用0填补；对于负数，符号位保持不变。</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">5 </span>&gt;&gt; <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>5</code> 的二进制是 <code>0101</code></li>
+<li>右移一位：<code>0010</code> → <code>2</code></li>
+</ul>
+</li>
+<li>
+<p>无符号右移（&gt;&gt;&gt;）：与右移类似，但是对负数无符号右移时会将符号位填充为0。</p>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="deletion">-5 &gt;&gt;&gt; 1</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><code>-5</code> 的二进制（补码表示）是 <code>11111111111111111111111111111011</code></li>
+</ul>
+</li>
+<li>
+<p>无符号右移一位：<code>01111111111111111111111111111101</code> → <code>2147483642</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="位运算的技巧与应用"><a class="markdownIt-Anchor" href="#位运算的技巧与应用"></a> 位运算的技巧与应用</h3>
+<ol>
+<li>
+<p><strong>快速计算乘法与除法（2 的幂）</strong></p>
+<ul>
+<li>
+<p>左移：相当于乘以 2 的某个次幂。例如，x &lt;&lt; n 等价于 x * 2^n。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &lt;&lt; <span class="number">2</span>;  <span class="comment">// 相当于 5 * 4 = 20</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>右移：相当于除以 2 的某个次幂。例如，x &gt;&gt; n等价于 x / 2^n。</p>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">20</span>;</span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &gt;&gt; <span class="number">2</span>;  <span class="comment">// 相当于 20 / 4 = 5</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>判断奇偶数</strong></p>
+<ul>
+<li>
+<p><strong>奇数</strong>：<code>x &amp; 1</code> 为 <code>1</code> 时，表示 <code>x</code> 是奇数。</p>
+</li>
+<li>
+<p><strong>偶数</strong>：x &amp; 1为 0时，表示x是偶数。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;</span><br><span class="line"><span class="type">boolean</span> <span class="variable">isOdd</span> <span class="operator">=</span> (x &amp; <span class="number">1</span>) == <span class="number">1</span>;  <span class="comment">// 5 是奇数，结果为 true</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>判断是否是 2 的幂</strong></p>
+<ul>
+<li>
+<p>一个数如果是 2 的幂，则它与它的前一个数按位与结果为 0。例如，x 是 2 的幂，当且仅当 x &amp; (x - 1) == 0。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">     <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">8</span>;</span><br><span class="line">     <span class="type">boolean</span> <span class="variable">isPowerOfTwo</span> <span class="operator">=</span> (x &amp; (x - <span class="number">1</span>)) == <span class="number">0</span>;  <span class="comment">// 8 是 2 的幂，结果为 true</span></span><br><span class="line">   </span><br><span class="line"><span class="number">4.</span> **交换两个数**</span><br><span class="line"></span><br><span class="line">   - 利用异或操作可以在不使用临时变量的情况下交换两个数。</span><br><span class="line"></span><br><span class="line">     ```java</span><br><span class="line">     <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">5</span>, b = <span class="number">3</span>;</span><br><span class="line">     a = a ^ b;  <span class="comment">// a = 6</span></span><br><span class="line">     b = a ^ b;  <span class="comment">// b = 5</span></span><br><span class="line">     a = a ^ b;  <span class="comment">// a = 3</span></span><br><span class="line">     <span class="comment">// 交换后，a=3, b=5</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>设置某一位</strong></p>
+<ul>
+<li>
+<p>使用按位或操作来设置某一位为1</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">     <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line">     <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x | (<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 设置第 2 位为 1 -&gt; 0111</span></span><br><span class="line">   </span><br><span class="line"><span class="number">6.</span> **清除某一位**</span><br><span class="line"></span><br><span class="line">   - 使用按位与操作和按位非操作清除某一位。</span><br><span class="line"></span><br><span class="line">     ```java</span><br><span class="line">     <span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line">     <span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x &amp; ~(<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 清除第 2 位 -&gt; 0001</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>反转某一位</strong></p>
+<ul>
+<li>
+<p>使用按位异或操作来反转某一位。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">x</span> <span class="operator">=</span> <span class="number">5</span>;   <span class="comment">// 0101</span></span><br><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> x ^ (<span class="number">1</span> &lt;&lt; <span class="number">2</span>);  <span class="comment">// 反转第 2 位 -&gt; 0001</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>求平均数不带小数</strong></p>
+<ul>
+<li>
+<p>位运算(a + b) &gt;&gt; 1</p>
+</li>
+<li>
+<p>使用了位运算来高效地计算两个整数的平均值。通过按位与运算找到不进位的部分，按位异或运算找出进位的部分，然后将进位部分右移并与不进位部分相加，最终得到 <code>a</code> 和 <code>b</code> 的平均值。这种方法比直接使用 <code>(a + b) / 2</code> 更加高效。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> ((a &amp; b) + (a ^ b) &gt;&gt; <span class="number">1</span>) ;  </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>清零最低位的1</strong></p>
+<ul>
+<li>
+<p>检查 <code>n</code> 是否是 2 的幂：如果 <code>n &amp; (n - 1) == 0</code>，那么 <code>n</code> 是 2 的幂。</p>
+</li>
+<li>
+<p>清除 <code>n</code> 中最低位的 <code>1</code>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> <span class="variable">result</span> <span class="operator">=</span> n &amp; (n - <span class="number">1</span>) ;  </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="位运算的常见应用场景"><a class="markdownIt-Anchor" href="#位运算的常见应用场景"></a> 位运算的常见应用场景：</h3>
+<ol>
+<li><strong>图像处理</strong>：位运算用于像素的颜色深度处理和图像操作。</li>
+<li><strong>网络协议</strong>：许多网络协议（如 IP 地址、子网掩码）都依赖于位运算来处理二进制数据。</li>
+<li><strong>压缩算法</strong>：一些数据压缩算法利用位运算优化空间存储。</li>
+<li><strong>加密与解密</strong>：位运算被广泛应用于数据加密算法中（如 XOR 操作）。</li>
+</ol>
+<p>位运算是计算机科学中非常重要且高效的工具，它使得很多操作能够以最小的成本完成，尤其在性能要求高的场景下，掌握位运算能大大提高程序的效率。</p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/images/my.jpg" alt="sonder"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">sonder</p><p class="is-size-6 is-block">coder</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives/"><p class="title">32</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories/"><p class="title">41</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags/"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sonder10110" target="_blank" rel="me noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/sonder10110"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://facebook.com"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Twitter" href="https://twitter.com"><i class="fab fa-twitter"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">链接</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://hexo.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Hexo</span></span><span class="level-right"><span class="level-item tag">hexo.io</span></span></a></li><li><a class="level is-mobile" href="https://bulma.io" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Bulma</span></span><span class="level-right"><span class="level-item tag">bulma.io</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分类</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/JAVA/"><span class="level-start"><span class="level-item">JAVA</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/"><span class="level-start"><span class="level-item">JAVA基础知识点</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E4%BD%8D%E8%BF%90%E7%AE%97/"><span class="level-start"><span class="level-item">位运算</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"><span class="level-start"><span class="level-item">基本数据类型</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/"><span class="level-start"><span class="level-item">自定义比较器</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/JAVA/JAVA%E5%B8%B8%E7%94%A8API/"><span class="level-start"><span class="level-item">JAVA常用API</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/JAVA/JAVA%E5%B8%B8%E7%94%A8API/%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97/"><span class="level-start"><span class="level-item">优先队列</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/"><span class="level-start"><span class="level-item">力扣</span></span><span class="level-end"><span class="level-item tag">18</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"><span class="level-start"><span class="level-item">力扣每日一题</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/"><span class="level-start"><span class="level-item">力扣热门100</span></span><span class="level-end"><span class="level-item tag">17</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/"><span class="level-start"><span class="level-item">二分查找</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E4%BA%8C%E5%8F%89%E6%A0%91/"><span class="level-start"><span class="level-item">二叉树</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"><span class="level-start"><span class="level-item">动态规划</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%8F%8C%E6%8C%87%E9%92%88/"><span class="level-start"><span class="level-item">双指针</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%93%88%E5%B8%8C/"><span class="level-start"><span class="level-item">哈希</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%9B%9E%E6%BA%AF/"><span class="level-start"><span class="level-item">回溯</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%9B%BE%E8%AE%BA/"><span class="level-start"><span class="level-item">图论</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%A0%86/"><span class="level-start"><span class="level-item">堆</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%A4%9A%E7%BB%B4%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"><span class="level-start"><span class="level-item">多维动态规划</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E5%AD%90%E4%B8%B2/"><span class="level-start"><span class="level-item">子串</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E6%8A%80%E5%B7%A7/"><span class="level-start"><span class="level-item">技巧</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E6%95%B0%E7%BB%84/"><span class="level-start"><span class="level-item">数组</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E6%A0%88/"><span class="level-start"><span class="level-item">栈</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"><span class="level-start"><span class="level-item">滑动窗口</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E7%9F%A9%E9%98%B5/"><span class="level-start"><span class="level-item">矩阵</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/"><span class="level-start"><span class="level-item">贪心算法</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%8A%9B%E6%89%A3/%E5%8A%9B%E6%89%A3%E7%83%AD%E9%97%A8100/%E9%93%BE%E8%A1%A8/"><span class="level-start"><span class="level-item">链表</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li><li><a class="level is-mobile" href="/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/"><span class="level-start"><span class="level-item">天马行空</span></span><span class="level-end"><span class="level-item tag">3</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/%E4%B9%90%E7%90%86/"><span class="level-start"><span class="level-item">乐理</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/%E6%AD%8C/"><span class="level-start"><span class="level-item">歌</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/%E8%AF%97%E8%AF%8D%E6%AD%8C%E8%B5%8B/"><span class="level-start"><span class="level-item">诗词歌赋</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/"><span class="level-start"><span class="level-item">建站相关</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/Hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/"><span class="level-start"><span class="level-item">Hexo常用指令</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%AE%97%E6%B3%95/"><span class="level-start"><span class="level-item">算法</span></span><span class="level-end"><span class="level-item tag">4</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E7%AE%97%E6%B3%95/KMP/"><span class="level-start"><span class="level-item">KMP</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%AE%97%E6%B3%95/LRU%E4%B8%8ELFU%E7%BC%93%E5%AD%98%E6%9B%BF%E6%8D%A2/"><span class="level-start"><span class="level-item">LRU与LFU缓存替换</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%AE%97%E6%B3%95/ST%E8%A1%A8/"><span class="level-start"><span class="level-item">ST表</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%AE%97%E6%B3%95/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/"><span class="level-start"><span class="level-item">背包问题</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E8%AF%BB%E4%B9%A6/"><span class="level-start"><span class="level-item">读书</span></span><span class="level-end"><span class="level-item tag">2</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E8%AF%BB%E4%B9%A6/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/"><span class="level-start"><span class="level-item">人月神话</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%AF%BB%E4%B9%A6/%E7%BA%A2%E6%A5%BC%E6%A2%A6/"><span class="level-start"><span class="level-item">红楼梦</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-22T01:07:02.000Z">2025-01-22</time></p><p class="title"><a href="/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/comparator/">比较器</a></p><p class="categories"><a href="/categories/JAVA/">JAVA</a> / <a href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a> / <a href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%AF%94%E8%BE%83%E5%99%A8/">自定义比较器</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-21T08:00:12.000Z">2025-01-21</time></p><p class="title"><a href="/%E8%AF%BB%E4%B9%A6/%E7%BA%A2%E6%A5%BC%E6%A2%A6/honglou/">红楼梦</a></p><p class="categories"><a href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a> / <a href="/categories/%E8%AF%BB%E4%B9%A6/%E7%BA%A2%E6%A5%BC%E6%A2%A6/">红楼梦</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-21T06:39:25.000Z">2025-01-21</time></p><p class="title"><a href="/%E8%AF%BB%E4%B9%A6/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/The-Mythical-Man-Month/">人月神话</a></p><p class="categories"><a href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a> / <a href="/categories/%E8%AF%BB%E4%B9%A6/%E4%BA%BA%E6%9C%88%E7%A5%9E%E8%AF%9D/">人月神话</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-21T05:59:52.000Z">2025-01-21</time></p><p class="title"><a href="/%E7%AE%97%E6%B3%95/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/bag/">背包问题</a></p><p class="categories"><a href="/categories/%E7%AE%97%E6%B3%95/">算法</a> / <a href="/categories/%E7%AE%97%E6%B3%95/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/">背包问题</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-20T07:54:37.000Z">2025-01-20</time></p><p class="title"><a href="/%E7%AE%97%E6%B3%95/ST%E8%A1%A8/STtable/">STtable</a></p><p class="categories"><a href="/categories/%E7%AE%97%E6%B3%95/">算法</a> / <a href="/categories/%E7%AE%97%E6%B3%95/ST%E8%A1%A8/">ST表</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2025/01/"><span class="level-start"><span class="level-item">一月 2025</span></span><span class="level-end"><span class="level-item tag">32</span></span></a></li></ul></div></div></div><!--!--></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">浮生一梦</a><p class="is-size-7"><span>&copy; 2025 sonder</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-cn");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
