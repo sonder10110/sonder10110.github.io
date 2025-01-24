@@ -11682,23 +11682,6 @@ figure.highlight.foldable div.level-left {
     padding: 1.5rem 1rem;
   }
 }
-.qr-trigger {
-  position: relative;
-  display: inline-block;
-}
-.qr-trigger img.qr-img {
-  display: none;
-  position: absolute;
-  top: 100% /* 图片显示在图标下方 */;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px /* 设置图片大小 */;
-  height: 100px;
-  z-index: 1;
-}
-.qr-trigger:hover img.qr-img {
-  display: block;
-}
 body {
   counter-reset: card;
 }
