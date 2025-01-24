@@ -11688,9 +11688,9 @@ figure.highlight.foldable div.level-left {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px /* 你可以根据需要调整图片大小 */;
-  height: 100px /* 你可以根据需要调整图片大小 */;
-  z-index: 2;
+  width: 100px; /* 可根据需要调整图片大小 */
+  height: 100px; /* 可根据需要调整图片大小 */
+  z-index: 1;
 }
 .level-item button:hover img.social-image {
   display: block;
