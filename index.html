@@ -1077,8 +1077,9 @@ next数组代表了在匹配失败的时候，子串中可以跳过匹配的字�
                                         cxt;
                                     canvas.height = window.innerHeight;
                                     canvas.width = window.innerWidth;
-                                    canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
-                                    canvas.setAttribute('id', 'canvas_sakura');
+                                    // canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
+                                    // canvas.setAttribute('id', 'canvas_sakura');
+                                    canvas.setAttribute('style', 'position: fixed; left: 0; top: 0; pointer-events: none; z-index: 9999;');
                                     document.getElementsByTagName('body')[0].appendChild(canvas);
                                     cxt = canvas.getContext('2d');
                                     const sakuraList = new SakuraList();

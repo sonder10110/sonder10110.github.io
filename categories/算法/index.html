@@ -444,8 +444,9 @@ put 操作：如果缓存已满，先移除访问频率最少的节点。然后�
                                         cxt;
                                     canvas.height = window.innerHeight;
                                     canvas.width = window.innerWidth;
-                                    canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
-                                    canvas.setAttribute('id', 'canvas_sakura');
+                                    // canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
+                                    // canvas.setAttribute('id', 'canvas_sakura');
+                                    canvas.setAttribute('style', 'position: fixed; left: 0; top: 0; pointer-events: none; z-index: 9999;');
                                     document.getElementsByTagName('body')[0].appendChild(canvas);
                                     cxt = canvas.getContext('2d');
                                     const sakuraList = new SakuraList();
