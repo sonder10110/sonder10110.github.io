@@ -11681,6 +11681,26 @@ figure.highlight.foldable div.level-left {
     padding: 1.5rem 1rem;
   }
 }
+.social-links li a {
+  display: inline-block;
+  position: relative;
+}
+.social-links li a .fab {
+  display: block;
+  font-size: 2em /* 图标的大小，按需调整 */;
+}
+.social-links li a img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px /* 图片宽度 */;
+  height: 100px /* 图片高度 */;
+  z-index: 1;
+}
+.social-links li a:hover img {
+  display: block;
+}
 .content > h1 {
   padding: 0px 13px;
   border-left: 8px solid rgba(237,81,81,0.569);
