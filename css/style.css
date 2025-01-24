@@ -11681,23 +11681,18 @@ figure.highlight.foldable div.level-left {
     padding: 1.5rem 1rem;
   }
 }
-/* 为图标添加基础样式 */
-.social-links li a {
-  position: relative;
-  display: inline-block;
-}
-/* 隐藏图片，只有鼠标悬停时显示 */
-.social-links li a img.social-image {
+/* 初始隐藏图片 */
+.level-item button img.social-image {
   display: none;
   position: absolute;
-  top: 100% /* 图片显示在图标下方，按需调整 */;
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%) /* 居中显示图片 */;
-  width: 100px /* 调整图片宽度 */;
-  height: 100px /* 调整图片高度 */;
+  transform: translateX(-50%);
+  width: 100px /* 你可以根据需要调整图片大小 */;
+  height: 100px /* 你可以根据需要调整图片大小 */;
   z-index: 2;
 }
 /* 鼠标悬停时显示图片 */
-.social-links li a:hover img.social-image {
+.level-item button:hover img.social-image {
   display: block;
 }
