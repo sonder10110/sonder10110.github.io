@@ -122,6 +122,7 @@
 
     const $toc = $('#toc');
     if ($toc.length > 0) {
+        $toc.addClass('column-left is-sticky');   // 如果目录在左侧则改为 column-left
         const $mask = $('<div>');
         $mask.attr('id', 'toc-mask');
 
@@ -135,5 +136,28 @@
         $toc.on('click', toggleToc);
         $mask.on('click', toggleToc);
         $('.navbar-main .catalogue').on('click', toggleToc);
+    }
+
+    //右侧边栏吸底(无文章目录时生效)
+    var columnLeft = $('.column-left')[0];
+
+    function fixRightColumnTop() {
+        // if SBP return
+        if ($(window).width() < 769) {
+            columnLeft.style.top = null;
+        } else {
+            if (columnLeft) {
+                columnLeft.style.top = $(window).height() - columnLeft.scrollHeight - 10 + 'px';
+            } else {
+                setTimeout(function () {
+                    columnLeft = $('.column-right')[0];
+                    fixRightColumnTop();
+                }, 500);
+            }
+        }
+    }
+    if (!($('#toc').length > 0)) {  // 无目录
+        fixRightColumnTop();
+        $(window).resize(fixRightColumnTop);
     }
 }(jQuery, window.moment, window.ClipboardJS, window.IcarusThemeSettings));
