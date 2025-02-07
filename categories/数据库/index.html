@@ -29,7 +29,7 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">浮生一梦</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于本站</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">分类</a></li><li class="is-active"><a href="#" aria-current="page">数据库</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-02-07T02:09:23.000Z" title="2025/2/7 10:09:23">2025-02-07</time>发表</span><span class="level-item"><time dateTime="2025-02-07T02:47:48.328Z" title="2025/2/7 10:47:48">2025-02-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span><span class="level-item">20 分钟读完 (大约2950个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">Redis</a></p><div class="content"><h1 id="redis-简介"><a class="markdownIt-Anchor" href="#redis-简介"></a> Redis 简介</h1>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">浮生一梦</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于本站</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories/">分类</a></li><li class="is-active"><a href="#" aria-current="page">数据库</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-02-07T02:09:23.000Z" title="2025/2/7 10:09:23">2025-02-07</time>发表</span><span class="level-item"><time dateTime="2025-02-07T06:06:50.054Z" title="2025/2/7 14:06:50">2025-02-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span><span class="level-item">24 分钟读完 (大约3548个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">Redis</a></p><div class="content"><h1 id="redis-简介"><a class="markdownIt-Anchor" href="#redis-简介"></a> Redis 简介</h1>
 <p>Redis（Remote Dictionary Server）是一个开源的内存数据库，遵守 BSD 协议（<strong>B</strong>erkeley <strong>S</strong>oftware <strong>D</strong>istribution license），它提供了一个高性能的键值（key-value）存储系统，常用于缓存、消息队列、会话存储等应用场景。</p>
 <ul>
 <li>**性能极高：**Redis 以其极高的性能而著称，能够支持每秒数十万次的读写操作。这使得Redis成为处理高并发请求的理想选择，尤其是在需要快速响应的场景中，如缓存、会话管理、排行榜等。</li>
@@ -74,8 +74,13 @@
 </ul>
 <hr>
 <h2 id="string字符串"><a class="markdownIt-Anchor" href="#string字符串"></a> String（字符串）</h2>
-<p>string 是 redis 最基本的类型，你可以理解成与 Memcached 一模一样的类型，一个 key 对应一个 value。</p>
+<p>string 是 redis 最基本的类型，可以理解成与 Memcached（一个高性能、分布式内存对象缓存系统） 一模一样的类型，一个 key 对应一个 value。</p>
 <p>string 类型是二进制安全的。意思是 redis 的 string 可以包含任何数据，比如jpg图片或者序列化的对象。</p>
+<ol>
+<li><strong>任意数据存储</strong>：Redis 的字符串可以存储任何二进制数据，包括文本、图片、音频等，不受限于可打印字符。</li>
+<li><strong>无编码转换</strong>：数据存储和检索时，Redis 不会对其进行编码或解码，保证数据的原始性。</li>
+<li><strong>长度明确</strong>：Redis 通过长度而非终止符（如 C 语言中的 <code>\0</code>）来确定字符串的边界，因此可以包含空字符等特殊字节。</li>
+</ol>
 <p>string 类型是 Redis 最基本的数据类型，string 类型的值最大能存储 512MB。</p>
 <h3 id="常用命令"><a class="markdownIt-Anchor" href="#常用命令"></a> 常用命令</h3>
 <ul>
@@ -85,9 +90,6 @@
 <li><code>DECR key</code>：将键的值减 1。</li>
 <li><code>APPEND key value</code>：将值追加到键的值之后。</li>
 </ul>
-<h3 id="实例"><a class="markdownIt-Anchor" href="#实例"></a> 实例</h3>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">redis 127.0.0.1:6379&gt; <span class="built_in">SET</span> runoob <span class="string">&quot;菜鸟教程&quot;</span></span><br><span class="line">OK</span><br><span class="line">redis 127.0.0.1:6379&gt; <span class="built_in">GET</span> runoob</span><br><span class="line"><span class="string">&quot;菜鸟教程&quot;</span></span><br></pre></td></tr></table></figure>
-<p>在以上实例中我们使用了 Redis 的 <strong>SET</strong> 和 <strong>GET</strong> 命令。键为 runoob，对应的值为 <strong>菜鸟教程</strong>。</p>
 <p>**注意：**一个键最大能存储 512MB。</p>
 <hr>
 <h2 id="hash哈希"><a class="markdownIt-Anchor" href="#hash哈希"></a> Hash（哈希）</h2>
@@ -101,11 +103,6 @@
 <li><code>HGETALL key</code>：获取哈希表中所有字段和值。</li>
 <li><code>HDEL key field</code>：删除哈希表中的一个或多个字段。</li>
 </ul>
-<h3 id="实例-2"><a class="markdownIt-Anchor" href="#实例-2"></a> 实例</h3>
-<p><strong>DEL runoob</strong> 用于删除前面测试用过的 key，不然会报错：<strong>(error) WRONGTYPE Operation against a key holding the wrong kind of value</strong></p>
-<p><img src="https://www.runoob.com/wp-content/uploads/2014/11/B104156B-7270-4D03-8EB3-B72D4022ED78.jpg" alt="img"></p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">redis</span> <span class="number">127.0.0.1:6379</span>&gt; DEL runoob</span><br><span class="line">redis <span class="number">127.0.0.1:6379</span>&gt; HMSET runoob field1 <span class="string">&quot;Hello&quot;</span> field2 <span class="string">&quot;World&quot;</span></span><br><span class="line"><span class="string">&quot;OK&quot;</span></span><br><span class="line">redis <span class="number">127.0.0.1:6379</span>&gt; HGET runoob field1</span><br><span class="line"><span class="string">&quot;Hello&quot;</span></span><br><span class="line">redis <span class="number">127.0.0.1:6379</span>&gt; HGET runoob field2</span><br><span class="line"><span class="string">&quot;World&quot;</span></span><br></pre></td></tr></table></figure>
-<p>实例中我们使用了 Redis <strong>HMSET, HGET</strong> 命令，<strong>HMSET</strong> 设置了两个 <strong>field=&gt;value</strong> 对, HGET 获取对应 <strong>field</strong> 对应的 <strong>value</strong>。</p>
 <hr>
 <h2 id="list列表"><a class="markdownIt-Anchor" href="#list列表"></a> List（列表）</h2>
 <p>Redis 列表是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）。</p>
@@ -118,8 +115,6 @@
 <li><code>RPOP key</code>：移出并获取列表的最后一个元素。</li>
 <li><code>LRANGE key start stop</code>：获取列表在指定范围内的元素。</li>
 </ul>
-<h3 id="实例-3"><a class="markdownIt-Anchor" href="#实例-3"></a> 实例</h3>
-<figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; DEL runoob</span><br><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; lpush runoob redis</span><br><span class="line">(integer) <span class="number">1</span></span><br><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; lpush runoob mongodb</span><br><span class="line">(integer) <span class="number">2</span></span><br><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; lpush runoob rabbitmq</span><br><span class="line">(integer) <span class="number">3</span></span><br><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; <span class="keyword">lrange</span> runoob <span class="number">0</span> <span class="number">10</span></span><br><span class="line"><span class="number">1</span>) <span class="string">&quot;rabbitmq&quot;</span></span><br><span class="line"><span class="number">2</span>) <span class="string">&quot;mongodb&quot;</span></span><br><span class="line"><span class="number">3</span>) <span class="string">&quot;redis&quot;</span></span><br><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt;</span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="set集合"><a class="markdownIt-Anchor" href="#set集合"></a> Set（集合）</h2>
 <p>Redis 的 Set 是 string 类型的无序集合。</p>
@@ -134,8 +129,6 @@
 <h3 id="sadd-命令"><a class="markdownIt-Anchor" href="#sadd-命令"></a> sadd 命令</h3>
 <p>添加一个 string 元素到 key 对应的 set 集合中，成功返回 1，如果元素已经在集合中返回 0。</p>
 <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sadd <span class="built_in">key</span> <span class="built_in">member</span></span><br></pre></td></tr></table></figure>
-<h3 id="实例-4"><a class="markdownIt-Anchor" href="#实例-4"></a> 实例</h3>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; DEL runoob</span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; sadd runoob redis</span><br><span class="line">(integer) <span class="number">1</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; sadd runoob mongodb</span><br><span class="line">(integer) <span class="number">1</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; sadd runoob rabbitm<span class="string">q</span></span><br><span class="line"><span class="string">(integer)</span> <span class="number">1</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; sadd runoob rabbitm<span class="string">q</span></span><br><span class="line"><span class="string">(integer)</span> <span class="number">0</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; smembers runoob</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>) <span class="string">&quot;redis&quot;</span></span><br><span class="line"><span class="number">2</span>) <span class="string">&quot;rabbitmq&quot;</span></span><br><span class="line"><span class="number">3</span>) <span class="string">&quot;mongodb&quot;</span></span><br></pre></td></tr></table></figure>
 <p>**注意：**以上实例中 rabbitmq 添加了两次，但根据集合内元素的唯一性，第二次插入的元素将被忽略。</p>
 <p>集合中最大的成员数为 232 - 1(4294967295, 每个集合可存储40多亿个成员)。</p>
 <hr>
@@ -153,8 +146,6 @@
 <h3 id="zadd-命令"><a class="markdownIt-Anchor" href="#zadd-命令"></a> zadd 命令</h3>
 <p>添加元素到集合，元素在集合中存在则更新对应score</p>
 <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zadd <span class="built_in">key</span> score <span class="built_in">member</span> </span><br></pre></td></tr></table></figure>
-<h3 id="实例-5"><a class="markdownIt-Anchor" href="#实例-5"></a> 实例</h3>
-<figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; DEL runoob</span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; zadd runoob <span class="number">0</span> redis</span><br><span class="line">(integer) <span class="number">1</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; zadd runoob <span class="number">0</span> mongodb</span><br><span class="line">(integer) <span class="number">1</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; zadd runoob <span class="number">0</span> rabbitm<span class="string">q</span></span><br><span class="line"><span class="string">(integer)</span> <span class="number">1</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; zadd runoob <span class="number">0</span> rabbitm<span class="string">q</span></span><br><span class="line"><span class="string">(integer)</span> <span class="number">0</span></span><br><span class="line">redis <span class="number">127.0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; ZRANGEBYSCORE runoob <span class="number">0</span> <span class="number">1000</span></span><br><span class="line"><span class="number">1</span>) <span class="string">&quot;mongodb&quot;</span></span><br><span class="line"><span class="number">2</span>) <span class="string">&quot;rabbitmq&quot;</span></span><br><span class="line"><span class="number">3</span>) <span class="string">&quot;redis&quot;</span></span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="其他高级数据类似"><a class="markdownIt-Anchor" href="#其他高级数据类似"></a> 其他高级数据类似</h2>
 <h3 id="hyperloglog"><a class="markdownIt-Anchor" href="#hyperloglog"></a> HyperLogLog</h3>
@@ -182,6 +173,114 @@
 </ul>
 </li>
 </ul>
+<h1 id="redis-命令"><a class="markdownIt-Anchor" href="#redis-命令"></a> Redis 命令</h1>
+<p>Redis 命令用于在 redis 服务上执行操作。</p>
+<p>要在 redis 服务上执行命令需要一个 redis 客户端。Redis 客户端在我们之前下载的的 redis 的安装包中。</p>
+<h3 id="语法"><a class="markdownIt-Anchor" href="#语法"></a> 语法</h3>
+<p>Redis 客户端的基本语法为：</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ redis-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+<h3 id="实例"><a class="markdownIt-Anchor" href="#实例"></a> 实例</h3>
+<p>以下实例讲解了如何启动 redis 客户端：</p>
+<p>启动 redis 服务器，打开终端并输入命令 <strong>redis-cli</strong>，该命令会连接本地的 redis 服务。</p>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ redis-<span class="keyword">cli</span></span><br><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt;</span><br><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; <span class="built_in">PING</span></span><br><span class="line"></span><br><span class="line">PONG</span><br></pre></td></tr></table></figure>
+<p>在以上实例中连接到本地的 redis 服务并执行 <strong>PING</strong> 命令，该命令用于检测 redis 服务是否启动。</p>
+<hr>
+<h2 id="在远程服务上执行命令"><a class="markdownIt-Anchor" href="#在远程服务上执行命令"></a> 在远程服务上执行命令</h2>
+<p>如果需要在远程 redis 服务上执行命令，同样使用 <strong>redis-cli</strong> 命令。</p>
+<h3 id="语法-2"><a class="markdownIt-Anchor" href="#语法-2"></a> 语法</h3>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ redis-cli -h host -p port -a password</span><br></pre></td></tr></table></figure>
+<h3 id="实例-2"><a class="markdownIt-Anchor" href="#实例-2"></a> 实例</h3>
+<p>以下实例演示了如何连接到主机为 127.0.0.1，端口为 6379 ，密码为 mypass 的 redis 服务上。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$redis-cli -h <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span> -p <span class="number">6379</span> -a &quot;mypass&quot;</span><br><span class="line">redis <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt;</span><br><span class="line">redis <span class="number">127</span>.<span class="number">0</span>.<span class="number">0</span>.<span class="number">1</span>:<span class="number">6379</span>&gt; <span class="built_in">PING</span></span><br><span class="line"></span><br><span class="line">PONG</span><br></pre></td></tr></table></figure>
+<h1 id="redis-键key"><a class="markdownIt-Anchor" href="#redis-键key"></a> Redis 键(key)</h1>
+<p>Redis 键命令用于管理 redis 的键。</p>
+<h3 id="语法-3"><a class="markdownIt-Anchor" href="#语法-3"></a> 语法</h3>
+<p>Redis 键命令的基本语法如下：</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">redis</span> <span class="number">127.0.0.1:6379</span>&gt; COMMAND KEY_NAME</span><br></pre></td></tr></table></figure>
+<h3 id="实例-3"><a class="markdownIt-Anchor" href="#实例-3"></a> 实例</h3>
+<figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; <span class="keyword">SET</span> mykey <span class="comment">redis</span></span><br><span class="line">OK</span><br><span class="line">redis <span class="comment">127.0.0.1:6379&gt; DEL mykey</span></span><br><span class="line">(integer) 1</span><br></pre></td></tr></table></figure>
+<p>在以上实例中 <strong>DEL</strong> 是一个命令， <strong>mykey</strong> 是一个键。 如果键被删除成功，命令执行后输出 <strong>(integer) 1</strong>，否则将输出 <strong>(integer) 0</strong></p>
+<hr>
+<h2 id="redis-keys-命令"><a class="markdownIt-Anchor" href="#redis-keys-命令"></a> Redis keys 命令</h2>
+<p>下表给出了与 Redis 键相关的基本命令：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">序号</th>
+<th style="text-align:left">命令及描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">DEL key 该命令用于在 key 存在时删除 key。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">DUMP key 序列化给定 key ，并返回被序列化的值。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">EXISTS key 检查给定 key 是否存在。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">EXPIRE key seconds 为给定 key 设置过期时间，以秒计。</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">EXPIREAT key timestamp EXPIREAT 的作用和 EXPIRE 类似，都用于为 key 设置过期时间。 不同在于 EXPIREAT 命令接受的时间参数是 UNIX 时间戳(unix timestamp)。</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">PEXPIRE key milliseconds 设置 key 的过期时间以毫秒计。</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">PEXPIREAT key milliseconds-timestamp 设置 key 过期时间的时间戳(unix timestamp) 以毫秒计</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">KEYS pattern 查找所有符合给定模式( pattern)的 key 。</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">MOVE key db 将当前数据库的 key 移动到给定的数据库 db 当中。</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">PERSIST key 移除 key 的过期时间，key 将持久保持。</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">PTTL key 以毫秒为单位返回 key 的剩余的过期时间。</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">TTL key 以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">RANDOMKEY 从当前数据库中随机返回一个 key 。</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">RENAME key newkey修改 key 的名称</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">RENAMENX key newkey 仅当 newkey 不存在时，将 key 改名为 newkey 。</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">SCAN cursor [MATCH pattern] [COUNT count]] 迭代数据库中的数据库键。</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">TYPE key 返回 key 所储存的值的类型。</td>
+</tr>
+</tbody>
+</table>
 </div></article></div></div><div class="column column-left is-4-tablet is-3-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="/images/my.jpg" alt="sonder"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">sonder</p><p class="is-size-6 is-block">coder</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives/"><p class="title">36</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories/"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags/"><p class="title">0</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/sonder10110" target="_blank" rel="me noopener">关注我</a></div></div></div><!--!--><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-02-07T02:09:23.000Z">2025-02-07</time></p><p class="title"><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">Redis</a></p><p class="categories"><a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-02-07T01:57:51.000Z">2025-02-07</time></p><p class="title"><a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/network/">Network</a></p><p class="categories"><a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">计算机基础</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-24T01:15:58.000Z">2025-01-24</time></p><p class="title"><a href="/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/philosophy/">奇奇怪怪的思维方式</a></p><p class="categories"><a href="/categories/%E5%A4%A9%E9%A9%AC%E8%A1%8C%E7%A9%BA/">天马行空</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-23T05:11:30.000Z">2025-01-23</time></p><p class="title"><a href="/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/files-in-py/">文件读取</a></p><p class="categories"><a href="/categories/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">python基础语法</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-22T01:07:02.000Z">2025-01-22</time></p><p class="title"><a href="/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/comparator/">比较器</a></p><p class="categories"><a href="/categories/JAVA/">JAVA</a> / <a href="/categories/JAVA/JAVA%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%82%B9/">JAVA基础知识点</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">归档</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2025/02/"><span class="level-start"><span class="level-item">二月 2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2025/01/"><span class="level-start"><span class="level-item">一月 2025</span></span><span class="level-end"><span class="level-item tag">34</span></span></a></li></ul></div></div></div><!--!--></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/">浮生一梦</a><p class="is-size-7"><span>&copy; 2025 sonder</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><script type="text/javascript">
                             $(document).ready(function() {
                                 const img = new Image();
