@@ -29,57 +29,57 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">浮生一梦</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于本站</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-02-07T02:09:23.000Z" title="2025/2/7 10:09:23">2025-02-07</time>发表</span><span class="level-item"><time dateTime="2025-02-07T06:06:50.054Z" title="2025/2/7 14:06:50">2025-02-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span><span class="level-item">24 分钟读完 (大约3548个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">Redis</a></p><div class="content"><h1 id="redis-简介"><a class="markdownIt-Anchor" href="#redis-简介"></a> Redis 简介</h1>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">浮生一梦</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于本站</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-02-07T02:09:23.000Z" title="2025/2/7 10:09:23">2025-02-07</time>发表</span><span class="level-item"><time dateTime="2025-02-08T00:20:36.001Z" title="2025/2/8 08:20:36">2025-02-08</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</a></span><span class="level-item">24 分钟读完 (大约3541个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E6%95%B0%E6%8D%AE%E5%BA%93/redis/">Redis</a></p><div class="content"><h1 id="redis-简介"><a class="markdownIt-Anchor" href="#redis-简介"></a> Redis 简介</h1>
 <p>Redis（Remote Dictionary Server）是一个开源的内存数据库，遵守 BSD 协议（<strong>B</strong>erkeley <strong>S</strong>oftware <strong>D</strong>istribution license），它提供了一个高性能的键值（key-value）存储系统，常用于缓存、消息队列、会话存储等应用场景。</p>
 <ul>
-<li>**性能极高：**Redis 以其极高的性能而著称，能够支持每秒数十万次的读写操作。这使得Redis成为处理高并发请求的理想选择，尤其是在需要快速响应的场景中，如缓存、会话管理、排行榜等。</li>
-<li>**丰富的数据类型：**Redis 不仅支持基本的键值存储，还提供了丰富的数据类型，包括字符串、列表、集合、哈希表、有序集合等。这些数据类型为开发者提供了灵活的数据操作能力，使得Redis可以适应各种不同的应用场景。</li>
-<li>**原子性操作：**Redis 的所有操作都是原子性的，这意味着操作要么完全执行，要么完全不执行。这种特性对于确保数据的一致性和完整性至关重要，尤其是在高并发环境下处理事务时。</li>
-<li>**持久化：**Redis 支持数据的持久化，可以将内存中的数据保存到磁盘中，以便在系统重启后恢复数据。这为 Redis 提供了数据安全性，确保数据不会因为系统故障而丢失。</li>
-<li>**支持发布/订阅模式：**Redis 内置了发布/订阅模式（Pub/Sub），允许客户端之间通过消息传递进行通信。这使得 Redis 可以作为消息队列和实时数据传输的平台。</li>
-<li>**单线程模型：**尽管 Redis 是单线程的，但它通过高效的事件驱动模型来处理并发请求，确保了高性能和低延迟。单线程模型也简化了并发控制的复杂性。</li>
-<li>**主从复制：**Redis 支持主从复制，可以通过从节点来备份数据或分担读请求，提高数据的可用性和系统的伸缩性。</li>
-<li>**应用场景广泛：**Redis 被广泛应用于各种场景，包括但不限于缓存系统、会话存储、排行榜、实时分析、地理空间数据索引等。</li>
-<li>**社区支持：**Redis 拥有一个活跃的开发者社区，提供了大量的文档、教程和第三方库，这为开发者提供了强大的支持和丰富的资源。</li>
-<li>**跨平台兼容性：**Redis 可以在多种操作系统上运行，包括 Linux、macOS 和 Windows，这使得它能够在不同的技术栈中灵活部署。</li>
+<li>性能极高：Redis 以其极高的性能而著称，能够支持每秒数十万次的读写操作。这使得Redis成为处理高并发请求的理想选择，尤其是在需要快速响应的场景中，如缓存、会话管理、排行榜等。</li>
+<li>丰富的数据类型：Redis 不仅支持基本的键值存储，还提供了丰富的数据类型，包括字符串、列表、集合、哈希表、有序集合等。这些数据类型为开发者提供了灵活的数据操作能力，使得Redis可以适应各种不同的应用场景。</li>
+<li>原子性操作：Redis 的所有操作都是原子性的，这意味着操作要么完全执行，要么完全不执行。这种特性对于确保数据的一致性和完整性至关重要，尤其是在高并发环境下处理事务时。</li>
+<li>持久化：Redis 支持数据的持久化，可以将内存中的数据保存到磁盘中，以便在系统重启后恢复数据。这为 Redis 提供了数据安全性，确保数据不会因为系统故障而丢失。</li>
+<li>支持发布/订阅模式：Redis 内置了发布/订阅模式（Pub/Sub），允许客户端之间通过消息传递进行通信。这使得 Redis 可以作为消息队列和实时数据传输的平台。</li>
+<li>单线程模型：尽管 Redis 是单线程的，但它通过高效的事件驱动模型来处理并发请求，确保了高性能和低延迟。单线程模型也简化了并发控制的复杂性。</li>
+<li>主从复制：Redis 支持主从复制，可以通过从节点来备份数据或分担读请求，提高数据的可用性和系统的伸缩性。</li>
+<li>应用场景广泛：Redis 被广泛应用于各种场景，包括但不限于缓存系统、会话存储、排行榜、实时分析、地理空间数据索引等。</li>
+<li>社区支持：Redis 拥有一个活跃的开发者社区，提供了大量的文档、教程和第三方库，这为开发者提供了强大的支持和丰富的资源。</li>
+<li>跨平台兼容性：Redis 可以在多种操作系统上运行，包括 Linux、macOS 和 Windows，这使得它能够在不同的技术栈中灵活部署。</li>
 </ul>
 <hr>
 <h2 id="redis-与其他-key-value-存储有什么不同"><a class="markdownIt-Anchor" href="#redis-与其他-key-value-存储有什么不同"></a> Redis 与其他 key-value 存储有什么不同？</h2>
 <p>Redis 与其他 key-value 存储系统的主要区别在于其提供了丰富的数据类型、高性能的读写能力、原子性操作、持久化机制、以及丰富的特性集。</p>
 <p>以下是 Redis 的一些独特之处：</p>
 <ul>
-<li>**丰富的数据类型：**Redis 不仅仅支持简单的 key-value 类型的数据，还提供了 list、set、zset（有序集合）、hash 等数据结构的存储。这些数据类型可以更好地满足特定的业务需求，使得 Redis 可以用于更广泛的应用场景。</li>
-<li>**高性能的读写能力：**Redis 能读的速度是 110000次/s，写的速度是 81000次/s。这种高性能主要得益于 Redis 将数据存储在内存中，从而显著提高了数据的访问速度。</li>
-<li>**原子性操作：**Redis 的所有操作都是原子性的，这意味着操作要么完全执行，要么完全不执行。这种特性对于确保数据的一致性和完整性非常重要。</li>
-<li>**持久化机制：**Redis 支持数据的持久化，可以将内存中的数据保存在磁盘中，以便在系统重启后能够再次加载使用。这为 Redis 提供了数据安全性，确保数据不会因为系统故障而丢失。</li>
-<li>**丰富的特性集：**Redis 还支持 publish/subscribe（发布/订阅）模式、通知、key 过期等高级特性。这些特性使得 Redis 可以用于消息队列、实时数据分析等复杂的应用场景。</li>
-<li>**主从复制和高可用性：**Redis 支持 master-slave 模式的数据备份，提供了数据的备份和主从复制功能，增强了数据的可用性和容错性。</li>
-<li>**支持 Lua 脚本：**Redis 支持使用 Lua 脚本来编写复杂的操作，这些脚本可以在服务器端执行，提供了更多的灵活性和强大的功能。</li>
-<li>**单线程模型：**尽管 Redis 是单线程的，但它通过高效的事件驱动模型来处理并发请求，确保了高性能和低延迟。</li>
+<li>丰富的数据类型：Redis 不仅仅支持简单的 key-value 类型的数据，还提供了 list、set、zset（有序集合）、hash 等数据结构的存储。这些数据类型可以更好地满足特定的业务需求，使得 Redis 可以用于更广泛的应用场景。</li>
+<li>高性能的读写能力：Redis 能读的速度是 110000次/s，写的速度是 81000次/s。这种高性能主要得益于 Redis 将数据存储在内存中，从而显著提高了数据的访问速度。</li>
+<li>原子性操作：Redis 的所有操作都是原子性的，这意味着操作要么完全执行，要么完全不执行。这种特性对于确保数据的一致性和完整性非常重要。</li>
+<li>持久化机制：Redis 支持数据的持久化，可以将内存中的数据保存在磁盘中，以便在系统重启后能够再次加载使用。这为 Redis 提供了数据安全性，确保数据不会因为系统故障而丢失。</li>
+<li>丰富的特性集：Redis 还支持 publish/subscribe（发布/订阅）模式、通知、key 过期等高级特性。这些特性使得 Redis 可以用于消息队列、实时数据分析等复杂的应用场景。</li>
+<li>主从复制和高可用性：Redis 支持 master-slave 模式的数据备份，提供了数据的备份和主从复制功能，增强了数据的可用性和容错性。</li>
+<li>支持 Lua 脚本：Redis 支持使用 Lua 脚本来编写复杂的操作，这些脚本可以在服务器端执行，提供了更多的灵活性和强大的功能。</li>
+<li>单线程模型：尽管 Redis 是单线程的，但它通过高效的事件驱动模型来处理并发请求，确保了高性能和低延迟。</li>
 </ul>
 <h1 id="redis-数据类型"><a class="markdownIt-Anchor" href="#redis-数据类型"></a> Redis 数据类型</h1>
 <p>Redis 主要支持以下几种数据类型：</p>
 <ul>
-<li><strong>string（字符串）:</strong> 基本的数据存储单元，可以存储字符串、整数或者浮点数。</li>
-<li>**hash（哈希）😗*一个键值对集合，可以存储多个字段。</li>
-<li>**list（列表）😗*一个简单的列表，可以存储一系列的字符串元素。</li>
-<li>**set（集合）😗*一个无序集合，可以存储不重复的字符串元素。</li>
-<li><strong>zset(sorted set：有序集合):</strong> 类似于集合，但是每个元素都有一个分数（score）与之关联。</li>
-<li>**位图（Bitmaps）：**基于字符串类型，可以对每个位进行操作。</li>
-<li>**超日志（HyperLogLogs）：**用于基数统计，可以估算集合中的唯一元素数量。</li>
-<li>**地理空间（Geospatial）：**用于存储地理位置信息。</li>
-<li>**发布/订阅（Pub/Sub）：**一种消息通信模式，允许客户端订阅消息通道，并接收发布到该通道的消息。</li>
-<li>**流（Streams）：**用于消息队列和日志存储，支持消息的持久化和时间排序。</li>
-<li>**模块（Modules）：**Redis 支持动态加载模块，可以扩展 Redis 的功能。</li>
+<li>string（字符串）: 基本的数据存储单元，可以存储字符串、整数或者浮点数。</li>
+<li>hash（哈希）:一个键值对集合，可以存储多个字段。</li>
+<li>list（列表）:一个简单的列表，可以存储一系列的字符串元素。</li>
+<li>set（集合）:一个无序集合，可以存储不重复的字符串元素。</li>
+<li>zset(sorted set：有序集合): 类似于集合，但是每个元素都有一个分数（score）与之关联。</li>
+<li>位图（Bitmaps）：基于字符串类型，可以对每个位进行操作。</li>
+<li>超日志（HyperLogLogs）：用于基数统计，可以估算集合中的唯一元素数量。</li>
+<li>地理空间（Geospatial）：用于存储地理位置信息。</li>
+<li>发布/订阅（Pub/Sub）：一种消息通信模式，允许客户端订阅消息通道，并接收发布到该通道的消息。</li>
+<li>流（Streams）：用于消息队列和日志存储，支持消息的持久化和时间排序。</li>
+<li>模块（Modules）：Redis 支持动态加载模块，可以扩展 Redis 的功能。</li>
 </ul>
 <hr>
 <h2 id="string字符串"><a class="markdownIt-Anchor" href="#string字符串"></a> String（字符串）</h2>
 <p>string 是 redis 最基本的类型，可以理解成与 Memcached（一个高性能、分布式内存对象缓存系统） 一模一样的类型，一个 key 对应一个 value。</p>
 <p>string 类型是二进制安全的。意思是 redis 的 string 可以包含任何数据，比如jpg图片或者序列化的对象。</p>
 <ol>
-<li><strong>任意数据存储</strong>：Redis 的字符串可以存储任何二进制数据，包括文本、图片、音频等，不受限于可打印字符。</li>
-<li><strong>无编码转换</strong>：数据存储和检索时，Redis 不会对其进行编码或解码，保证数据的原始性。</li>
-<li><strong>长度明确</strong>：Redis 通过长度而非终止符（如 C 语言中的 <code>\0</code>）来确定字符串的边界，因此可以包含空字符等特殊字节。</li>
+<li>任意数据存储：Redis 的字符串可以存储任何二进制数据，包括文本、图片、音频等，不受限于可打印字符。</li>
+<li>无编码转换：数据存储和检索时，Redis 不会对其进行编码或解码，保证数据的原始性。</li>
+<li>长度明确：Redis 通过长度而非终止符（如 C 语言中的 <code>\0</code>）来确定字符串的边界，因此可以包含空字符等特殊字节。</li>
 </ol>
 <p>string 类型是 Redis 最基本的数据类型，string 类型的值最大能存储 512MB。</p>
 <h3 id="常用命令"><a class="markdownIt-Anchor" href="#常用命令"></a> 常用命令</h3>
@@ -90,7 +90,7 @@
 <li><code>DECR key</code>：将键的值减 1。</li>
 <li><code>APPEND key value</code>：将值追加到键的值之后。</li>
 </ul>
-<p>**注意：**一个键最大能存储 512MB。</p>
+<p>注意：一个键最大能存储 512MB。</p>
 <hr>
 <h2 id="hash哈希"><a class="markdownIt-Anchor" href="#hash哈希"></a> Hash（哈希）</h2>
 <p>Redis hash 是一个键值(key=&gt;value)对集合，类似于一个小型的 NoSQL 数据库。</p>
@@ -129,7 +129,7 @@
 <h3 id="sadd-命令"><a class="markdownIt-Anchor" href="#sadd-命令"></a> sadd 命令</h3>
 <p>添加一个 string 元素到 key 对应的 set 集合中，成功返回 1，如果元素已经在集合中返回 0。</p>
 <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sadd <span class="built_in">key</span> <span class="built_in">member</span></span><br></pre></td></tr></table></figure>
-<p>**注意：**以上实例中 rabbitmq 添加了两次，但根据集合内元素的唯一性，第二次插入的元素将被忽略。</p>
+<p>注意：以上实例中 rabbitmq 添加了两次，但根据集合内元素的唯一性，第二次插入的元素将被忽略。</p>
 <p>集合中最大的成员数为 232 - 1(4294967295, 每个集合可存储40多亿个成员)。</p>
 <hr>
 <h2 id="zsetsorted-set有序集合"><a class="markdownIt-Anchor" href="#zsetsorted-set有序集合"></a> zset(sorted set：有序集合)</h2>
@@ -199,85 +199,85 @@
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">redis</span> <span class="number">127.0.0.1:6379</span>&gt; COMMAND KEY_NAME</span><br></pre></td></tr></table></figure>
 <h3 id="实例-3"><a class="markdownIt-Anchor" href="#实例-3"></a> 实例</h3>
 <figure class="highlight gams"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">redis <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span>:<span class="number">6379</span>&gt; <span class="keyword">SET</span> mykey <span class="comment">redis</span></span><br><span class="line">OK</span><br><span class="line">redis <span class="comment">127.0.0.1:6379&gt; DEL mykey</span></span><br><span class="line">(integer) 1</span><br></pre></td></tr></table></figure>
-<p>在以上实例中 <strong>DEL</strong> 是一个命令， <strong>mykey</strong> 是一个键。 如果键被删除成功，命令执行后输出 <strong>(integer) 1</strong>，否则将输出 <strong>(integer) 0</strong></p>
+<p>在以上实例中DEL 是一个命令， mykey 是一个键。 如果键被删除成功，命令执行后输出 (integer) 1，否则将输出 (integer) 0</p>
 <hr>
 <h2 id="redis-keys-命令"><a class="markdownIt-Anchor" href="#redis-keys-命令"></a> Redis keys 命令</h2>
 <p>下表给出了与 Redis 键相关的基本命令：</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">序号</th>
-<th style="text-align:left">命令及描述</th>
+<th style="text-align:left">命令</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">1</td>
-<td style="text-align:left">DEL key 该命令用于在 key 存在时删除 key。</td>
+<td style="text-align:left">DEL key</td>
+<td style="text-align:left">用于在 key 存在时删除 key。</td>
 </tr>
 <tr>
-<td style="text-align:left">2</td>
-<td style="text-align:left">DUMP key 序列化给定 key ，并返回被序列化的值。</td>
+<td style="text-align:left">DUMP key</td>
+<td style="text-align:left">序列化给定 key ，并返回被序列化的值。</td>
 </tr>
 <tr>
-<td style="text-align:left">3</td>
-<td style="text-align:left">EXISTS key 检查给定 key 是否存在。</td>
+<td style="text-align:left">EXISTS key</td>
+<td style="text-align:left">检查给定 key 是否存在。</td>
 </tr>
 <tr>
-<td style="text-align:left">4</td>
-<td style="text-align:left">EXPIRE key seconds 为给定 key 设置过期时间，以秒计。</td>
+<td style="text-align:left">EXPIRE key seconds</td>
+<td style="text-align:left">为给定 key 设置过期时间，以秒计。</td>
 </tr>
 <tr>
-<td style="text-align:left">5</td>
-<td style="text-align:left">EXPIREAT key timestamp EXPIREAT 的作用和 EXPIRE 类似，都用于为 key 设置过期时间。 不同在于 EXPIREAT 命令接受的时间参数是 UNIX 时间戳(unix timestamp)。</td>
+<td style="text-align:left">EXPIREAT key timestamp EXPIREAT</td>
+<td style="text-align:left">作用和 EXPIRE 类似，都用于为 key 设置过期时间。 不同在于 EXPIREAT 命令接受的时间参数是 UNIX 时间戳(unix timestamp)。</td>
 </tr>
 <tr>
-<td style="text-align:left">6</td>
-<td style="text-align:left">PEXPIRE key milliseconds 设置 key 的过期时间以毫秒计。</td>
+<td style="text-align:left">PEXPIRE key milliseconds</td>
+<td style="text-align:left">设置 key 的过期时间以毫秒计。</td>
 </tr>
 <tr>
-<td style="text-align:left">7</td>
-<td style="text-align:left">PEXPIREAT key milliseconds-timestamp 设置 key 过期时间的时间戳(unix timestamp) 以毫秒计</td>
+<td style="text-align:left">PEXPIREAT key milliseconds-timestamp</td>
+<td style="text-align:left">设置 key 过期时间的时间戳(unix timestamp) 以毫秒计</td>
 </tr>
 <tr>
-<td style="text-align:left">8</td>
-<td style="text-align:left">KEYS pattern 查找所有符合给定模式( pattern)的 key 。</td>
+<td style="text-align:left">KEYS pattern</td>
+<td style="text-align:left">查找所有符合给定模式(pattern)的 key 。</td>
 </tr>
 <tr>
-<td style="text-align:left">9</td>
-<td style="text-align:left">MOVE key db 将当前数据库的 key 移动到给定的数据库 db 当中。</td>
+<td style="text-align:left">MOVE key db</td>
+<td style="text-align:left">将当前数据库的 key 移动到给定的数据库 db 当中。</td>
 </tr>
 <tr>
-<td style="text-align:left">10</td>
-<td style="text-align:left">PERSIST key 移除 key 的过期时间，key 将持久保持。</td>
+<td style="text-align:left">PERSIST key</td>
+<td style="text-align:left">移除 key 的过期时间，key 将持久保持。</td>
 </tr>
 <tr>
-<td style="text-align:left">11</td>
-<td style="text-align:left">PTTL key 以毫秒为单位返回 key 的剩余的过期时间。</td>
+<td style="text-align:left">PTTL key</td>
+<td style="text-align:left">以毫秒为单位返回 key 的剩余的过期时间。</td>
 </tr>
 <tr>
-<td style="text-align:left">12</td>
-<td style="text-align:left">TTL key 以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。</td>
+<td style="text-align:left">TTL key</td>
+<td style="text-align:left">以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。</td>
 </tr>
 <tr>
-<td style="text-align:left">13</td>
-<td style="text-align:left">RANDOMKEY 从当前数据库中随机返回一个 key 。</td>
+<td style="text-align:left">RANDOMKEY</td>
+<td style="text-align:left">从当前数据库中随机返回一个 key 。</td>
 </tr>
 <tr>
-<td style="text-align:left">14</td>
-<td style="text-align:left">RENAME key newkey修改 key 的名称</td>
+<td style="text-align:left">RENAME key newkey</td>
+<td style="text-align:left">修改 key 的名称</td>
 </tr>
 <tr>
-<td style="text-align:left">15</td>
-<td style="text-align:left">RENAMENX key newkey 仅当 newkey 不存在时，将 key 改名为 newkey 。</td>
+<td style="text-align:left">RENAMENX key newkey</td>
+<td style="text-align:left">仅当 newkey 不存在时，将 key 改名为 newkey 。</td>
 </tr>
 <tr>
-<td style="text-align:left">16</td>
-<td style="text-align:left">SCAN cursor [MATCH pattern] [COUNT count]] 迭代数据库中的数据库键。</td>
+<td style="text-align:left">SCAN cursor [MATCH pattern] [COUNT count]]</td>
+<td style="text-align:left">迭代数据库中的数据库键。</td>
 </tr>
 <tr>
-<td style="text-align:left">17</td>
-<td style="text-align:left">TYPE key 返回 key 所储存的值的类型。</td>
+<td style="text-align:left">TYPE key</td>
+<td style="text-align:left">返回 key 所储存的值的类型。</td>
 </tr>
 </tbody>
 </table>
@@ -361,7 +361,7 @@
 <h2 id="唐多令柳絮"><a class="markdownIt-Anchor" href="#唐多令柳絮"></a> 唐多令·柳絮</h2>
 <p>粉堕百花洲，香残燕子楼。一团团、逐队成毬。飘泊亦如人命薄，空缱绻，说风流。<br>
 草木也知愁，韶华竟白头。叹今生、谁舍谁收！嫁与东风春不管，凭尔去，忍淹留！</p>
-</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-01-21T06:39:25.000Z" title="2025/1/21 14:39:25">2025-01-21</time>发表</span><span class="level-item"><time dateTime="2025-02-07T07:08:34.975Z" title="2025/2/7 15:08:34">2025-02-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a></span><span class="level-item">37 分钟读完 (大约5546个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%AF%BB%E4%B9%A6/The-Mythical-Man-Month/">人月神话</a></p><div class="content"><p>&quot;success without applause, diligence without reward&quot;.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-01-21T06:39:25.000Z" title="2025/1/21 14:39:25">2025-01-21</time>发表</span><span class="level-item"><time dateTime="2025-02-07T09:01:21.587Z" title="2025/2/7 17:01:21">2025-02-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E8%AF%BB%E4%B9%A6/">读书</a></span><span class="level-item">37 分钟读完 (大约5546个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E8%AF%BB%E4%B9%A6/The-Mythical-Man-Month/">人月神话</a></p><div class="content"><p>&quot;success without applause, diligence without reward&quot;.</p>
 <p>关于管理大型的计算机编程项目。本文仅仅用于记录，内容来源于《人月神话》，是清华大学出版的四十周年纪念版。</p>
 <h1 id="第一章-焦油坑-the-tar-pit"><a class="markdownIt-Anchor" href="#第一章-焦油坑-the-tar-pit"></a> 第一章 焦油坑  The Tar Pit</h1>
 <p>&quot;A ship on the beach is a lighthouse to the sea.&quot;前车之覆，后车之鉴。</p>
@@ -650,12 +650,13 @@
 <h2 id="第十五章-另外一面-2"><a class="markdownIt-Anchor" href="#第十五章-另外一面-2"></a> 第十五章 另外一面</h2>
 <h2 id="第一版结束语"><a class="markdownIt-Anchor" href="#第一版结束语"></a> 第一版结束语</h2>
 <h1 id="第十九章-20年后的人月神话"><a class="markdownIt-Anchor" href="#第十九章-20年后的人月神话"></a> 第十九章 20年后的《人月神话》</h1>
-<p>为什么要出版20周年纪念版本</p>
-<p>核心观点——概念完整性和结构师</p>
-<p>开发第二个系统所引起的后果——盲目的功能和频率猜测</p>
-<p>图形界面的成功</p>
-<p>没有构建舍弃模型——瀑布模型是错误的</p>
-<p>增量开发模型更佳——渐进地精化</p>
+<h1 id="为什么要出版20周年纪念版本"><a class="markdownIt-Anchor" href="#为什么要出版20周年纪念版本"></a> 为什么要出版20周年纪念版本</h1>
+<h1 id="核心观点概念完整性和结构师"><a class="markdownIt-Anchor" href="#核心观点概念完整性和结构师"></a> 核心观点——概念完整性和结构师</h1>
+<h1 id="开发第二个系统所引起的后果盲目的功能和频率猜测"><a class="markdownIt-Anchor" href="#开发第二个系统所引起的后果盲目的功能和频率猜测"></a> 开发第二个系统所引起的后果——盲目的功能和频率猜测</h1>
+<h1 id="图形界面的成功"><a class="markdownIt-Anchor" href="#图形界面的成功"></a> 图形界面的成功</h1>
+<h1 id="没有构建舍弃模型瀑布模型是错误的"><a class="markdownIt-Anchor" href="#没有构建舍弃模型瀑布模型是错误的"></a> 没有构建舍弃模型——瀑布模型是错误的</h1>
+<h1 id="增量开发模型更佳渐进地精化"><a class="markdownIt-Anchor" href="#增量开发模型更佳渐进地精化"></a> 增量开发模型更佳——渐进地精化</h1>
+<h1 id=""><a class="markdownIt-Anchor" href="#"></a> </h1>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-01-21T05:59:52.000Z" title="2025/1/21 13:59:52">2025-01-21</time>发表</span><span class="level-item"><time dateTime="2025-02-07T02:06:45.668Z" title="2025/2/7 10:06:45">2025-02-07</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span><span class="level-item">21 分钟读完 (大约3137个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/%E7%AE%97%E6%B3%95/bag/">背包问题</a></p><div class="content"><p>计算机科学、算法设计和优化理论中非常著名的“背包问题”（Knapsack Problem）是一个典型的组合优化问题，也是动态规划算法的一个经典应用。<br>
 背包问题有多种变体，但最基本的形式是：<br>
 <strong>给定一组物品，每种物品都有自己的重量和价值，在限定的总重量内，如何选择装入背包的物品，使得背包内物品的总价值最大。</strong></p>
