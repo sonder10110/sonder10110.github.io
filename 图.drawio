@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
   <diagram name="第 1 页" id="jig5XQP9XCwdvTIta5L3">
-    <mxGraphModel dx="2193" dy="1071" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="940" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -622,31 +622,31 @@
             <mxPoint x="2141" y="489.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=auto;shadow=1;strokeWidth=3;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="720" width="640" height="180" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=auto;shadow=1;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;gradientDirection=south;gradientColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="760" width="620" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-5" value="人工智能" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="2210" y="730" width="100" height="40" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-5" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;人工智能&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="760" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-6" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;问题求解（A*搜索算法）&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;知识推理（一阶逻辑推理）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;规划问题（图规划）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;不确定性推理（贝叶斯网络）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;通信感知与行动（自然语言处理）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;学习问题（决策树、神经网络、增强学习）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2200" y="800" width="250" height="110" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-6" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;问题求解（A*搜索算法）&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;知识推理（一阶逻辑推理）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;规划问题（图规划）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;不确定性推理（贝叶斯网络）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;通信感知与行动（自然语言处理）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;学习问题（决策树、神经网络、增强学习）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2220" y="800" width="250" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=auto;shadow=1;strokeWidth=3;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="2450" y="750" width="390" height="150" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=auto;shadow=1;strokeWidth=3;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="790" width="380" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-9" value="机器学习" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="2460" y="755" width="100" height="40" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-9" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;机器学习&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="790" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-10" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;分类（KNN、K-Means、SVM、决策树）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;回归（线性回归）&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;关联（Apriori算法）&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2445" y="840" width="250" height="60" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-10" value="&lt;div style=&quot;text-align: left;&quot;&gt;分类（KNN、K-Means、SVM、决策树）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;回归（线性回归）&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;关联（Apriori算法）&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="840" width="240" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=auto;shadow=1;strokeWidth=3;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="2690" y="780" width="150" height="120" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-11" value="" style="rounded=0;whiteSpace=wrap;html=1;fillStyle=auto;shadow=1;strokeWidth=3;fillColor=#dae8fc;strokeColor=#6c8ebf;gradientColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="2690" y="800" width="150" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-12" value="深度学习" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
-          <mxGeometry x="2700" y="784" width="100" height="40" as="geometry" />
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-12" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;深度学习&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="2690" y="800" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="erhxxaPpzJqBhpPlQXp3-13" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;神经网络&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;深度神经网络&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;深度增强学习&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="erhxxaPpzJqBhpPlQXp3-13" value="&lt;div style=&quot;text-align: left;&quot;&gt;神经网络&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;深度神经网络&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;深度增强学习&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="2690" y="840" width="100" height="60" as="geometry" />
         </mxCell>
         <mxCell id="erhxxaPpzJqBhpPlQXp3-14" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
