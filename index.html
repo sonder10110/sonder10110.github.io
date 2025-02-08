@@ -29,7 +29,7 @@
       switchTab();
       window.addEventListener('hashchange', switchTab, false);
   })();
-  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">浮生一梦</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于本站</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-02-08T01:17:48.000Z" title="2025/2/8 09:17:48">2025-02-08</time>发表</span><span class="level-item"><time dateTime="2025-02-08T06:41:40.266Z" title="2025/2/8 14:41:40">2025-02-08</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/AI/">AI</a></span><span class="level-item">18 分钟读完 (大约2737个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/AI/deep-learning/">深度学习</a></p><div class="content"><h1 id="aimldl的基本概念"><a class="markdownIt-Anchor" href="#aimldl的基本概念"></a> AI/ML/DL的基本概念</h1>
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/">浮生一梦</a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item is-active" href="/">首页</a><a class="navbar-item" href="/archives">文章</a><a class="navbar-item" href="/categories">分类</a><a class="navbar-item" href="/tags">标签</a><a class="navbar-item" href="/about">关于本站</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-9-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2025-02-08T01:17:48.000Z" title="2025/2/8 09:17:48">2025-02-08</time>发表</span><span class="level-item"><time dateTime="2025-02-08T06:48:17.628Z" title="2025/2/8 14:48:17">2025-02-08</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/AI/">AI</a></span><span class="level-item">18 分钟读完 (大约2737个字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/AI/deep-learning/">深度学习</a></p><div class="content"><h1 id="aimldl的基本概念"><a class="markdownIt-Anchor" href="#aimldl的基本概念"></a> AI/ML/DL的基本概念</h1>
 <p>人工智能（Artificial Intelligence）—— 是指是设计和构建智能代理，从环境中感知并采取行动，最大限度地提高实现目标的机会。但目前的科研工作都集中在弱人工智能这部分，强人工智能还遥遥无期。</p>
 <p>机器学习（Machine Learning）—— 使用算法来解析数据、从中学习，然后对真实世界中的事件做出决策和预测。与传统的为解决特定任务、硬编码的软件程序不同，机器学习是用大量的数据来“训练”，通过各种算法从数据中学习如何完成任务。</p>
 <p>深度学习（Deep Leaning）—— 最初的深度学习是利用深度神经网络来解决特征表达的一种学习过程。但由于近几年该领域发展迅猛，一些特有的学习手段相继被提出（如残差网络），因此越来越多的人将其单独看作一种学习的方法。</p>
@@ -92,11 +92,15 @@
 </ol>
 <h2 id="数学模型"><a class="markdownIt-Anchor" href="#数学模型"></a> 数学模型</h2>
 <p>感知机的输出 \(y\) 可以表示为：</p>
-<p>\(y = f\left( \sum_{i=1}^{n} w_i x_i + b \right))\</p>
+<p>\[<br>
+y = f\left( \sum_{i=1}^{n} w_i x_i + b \right)<br>
+]\</p>
 <p>其中，\(f)\ 是激活函数。对于二分类问题，激活函数通常定义为：</p>
 <p>\[<br>
-f(z) = \begin{cases} 1 &amp; \text{if } z \geq 0<br>
-\0 &amp; \text{if } z &lt; 0 \end{cases}<br>
+f(z) = \begin{cases}<br>
+1 &amp; \text{if } z \geq 0 \<br>
+0 &amp; \text{if } z &lt; 0<br>
+\end{cases}<br>
 \]</p>
 <h2 id="学习过程"><a class="markdownIt-Anchor" href="#学习过程"></a> 学习过程</h2>
 <p>感知机的学习过程通过迭代更新权重和偏置来实现，目标是使分类错误最小化。具体步骤如下：</p>
