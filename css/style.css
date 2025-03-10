@@ -10935,7 +10935,13 @@ a.article-nav-next span {
   white-space: normal;
 }
 .navbar-main {
+  position: fixed;
+  width: 100%;
+  top: 0px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.navbar-main .section {
+  margin-top: 45px;
 }
 .navbar-main .navbar-container {
   overflow-x: auto;
