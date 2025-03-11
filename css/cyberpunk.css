@@ -10972,8 +10972,8 @@ a.article-nav-next span {
 .navbar-main .navbar-item {
   display: flex;
   align-items: center;
-  padding: 0 0.5rem;
-  margin: 1.25rem 0.25rem;
+  padding: 8.5px;
+  margin: 4px;
 }
 .navbar-main .navbar-item.is-active {
   background-color: transparent;
