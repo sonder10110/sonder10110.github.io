@@ -10940,6 +10940,7 @@ a.article-nav-next span {
   width: 100%;
   top: 0px;
   box-shadow: none;
+  z-index: 100;
 }
 .navbar-main .section {
   margin-top: 55px;
